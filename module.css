@@ -1,0 +1,491 @@
+﻿.WESNet_RequiredIndicator span.dnnFormRequired {
+    float: right;
+    padding-right: 20px;
+}
+
+.riSingle .riTextBox {
+    float: left;
+}
+
+.riSingle a.riUp, .riSingle a.riDown {
+    margin-left: -15px;
+    vertical-align: top !important;
+}
+
+a.rcRefreshImage, a.rcCaptchaAudioLink {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+div.WESNet_ByInvitation .dnnFormRadioButtons
+{
+    margin-top: -10px;
+}
+
+    div.WESNet_ByInvitation .dnnFormRadioButtons input[type="radio"]
+    {
+        margin-right: 5px;
+    }
+
+.dnnFormCheckBoxes label
+{
+    font-weight: normal;
+    margin: 0 10px 0 4px;
+    width: auto;
+    text-align: left;
+    padding-right: 0;
+    float: none;
+    display: inline;
+}
+
+table.dnnFormCheckBoxes
+{
+    float: left;
+    display: block;
+    clear: right;
+    margin-bottom: 22px;
+}
+
+.dnnFormCheckBoxes input[type=checkbox]
+{
+    float: none;
+}
+
+.WESNet_ByInvitation input.AddRoleButton, .WESNet_ByInvitation_Settings input.AddRoleButton {
+    margin-top: 8px;
+}
+
+.WESNet_ByInvitation .SendInvitation
+{
+    padding: 6px;
+}
+
+.WESNet_ByInvitation .SendInvitation div.InvitationHtml
+{
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.WESNet_ByInvitation .SendInvitation .InvitationButton
+{
+    text-align: center;
+    padding: 3px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.WESNet_ByInvitation .SendInvitation .InvitationButton a
+{
+    border-radius: 5px 5px;
+}
+
+.WESNet_ByInvitation .EditInvitation .dnnForm input[type=checkbox]
+{
+    margin-left: 10px;
+}
+
+.WESNet_ByInvitation .EditInvitation .dnnForm select
+{
+    float: left;
+    margin-right: 10px;
+}
+
+.WESNet_ByInvitation .EditInvitation .dnnForm input[type=checkbox] + label,
+.WESNet_ByInvitation .EditInvitation .dnnForm input[type=radio] + label,
+.WESNet_ByInvitation_Settings .dnnCheckBoxList input[type=checkbox] + label
+{
+    text-align: left;
+    margin-top: -1px;
+    width: auto;
+    font-weight: normal;
+}
+
+.WESNet_ByInvitation div.RadCaptcha
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.WESNet_ByInvitation div.RadCaptcha > span
+{
+    display: inline-block;
+    color: #ffffff;
+    background-color: Red;
+    padding: 5px;
+    margin-bottom: 3px;
+}
+
+.WESNet_ByInvitation div.RadCaptcha img
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.WESNet_ByInvitation div.RadCaptcha label
+{
+    display: block;
+}
+
+.WESNet_ByInvitation div.dnnFormItem input.TemporaryPassword {
+    margin-left: 36%;
+}
+
+.WESNet_ByInvitation_Settings div.dnnCultureCode
+{
+    float: left;
+    width: 45%;
+    margin-bottom: 18px;
+}
+
+.WESNet_ByInvitation_Settings div.dnnCultureCode td label
+{
+    width: auto;
+}
+
+.WESNet_ByInvitation_Settings div.dnnCultureCode input[type="text"]
+{
+    width: auto;
+}
+
+.WESNet_ByInvitation_Settings span.AddCulture > input
+{
+    float: left;
+    width: 50px !important;
+    min-width: 50px;
+}
+
+.WESNet_ByInvitation_Settings .dnnTextEditor
+{
+    width: 593px!important;
+    clear: right!important;
+    float: left;
+}
+
+.dnnGridHeader th {
+    padding: 6px 0 6px 0;
+    border-bottom: 1px solid #c9c9c9;
+    border-right: 1px solid #c9c9c9;
+    background: #f0f2f1;
+    background: -moz-linear-gradient(top, #fff 0%, #f0f2f1 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#f0f2f1)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fff 0%,#f0f2f1 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(top, #fff 0%,#f0f2f1 100%); /* W3C */
+}
+
+div.WESNet_ByInvitation .dnnGridItem td, div.WESNet_ByInvitation .dnnGridAltItem td
+{
+    text-align: center;
+}
+
+.dnnGridItem td.WESNet_AlignRight, .dnnGridAltItem td.WESNet_AlignRight
+{
+    text-align: right !important;
+}
+
+.dnnGridItem td.WESNet_AlignCenter, .dnnGridAltItem td.WESNet_AlignCenter
+{
+    text-align: center !important;
+}
+
+.dnnGridItem td.WESNet_AlignLeft, .dnnGridAltItem td.WESNet_AlignLeft
+{
+    text-align: left !important;
+}
+
+
+.WESNet_ByInvitation .dnnGrid, .WESNet_ByInvitation_Settings .dnnGrid, WESNet_ByInvitation_Settings .dnnRolesGrid
+{
+    float: left;
+    width: 45%;
+    margin-bottom: 18px;
+}
+
+.WESNet_ByInvitation_Settings .dnnRolesGrid br
+{
+    display: none;
+}
+
+.WESNet_ByInvitation_Settings .dnnRolesGrid input[type="checkbox"]
+{
+    float: none;
+}
+
+div.WESNet_ShortDatePicker
+{
+	width: 120px !important;
+    float: left;
+    height: 34px !important;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+div.WESNet_DateRange
+{
+    float: left;
+    width: 45%;
+    margin-bottom: 18px;
+    clear: right;
+}
+
+    div.WESNet_DateRange > label {
+        float: left;
+        padding-top: 6px;
+        padding-right: 4px;
+        height: 35px;
+    }
+
+div.WESNet_TimeSpanPicker
+{
+    float: left;
+    width: 45%;
+}
+
+.WESNet_TimeSpanPicker span.riSingle
+{
+    width: 55px!important;
+}
+
+.WESNet_TimeSpanPicker label
+{
+    width: auto;
+    min-width: 0;
+    margin-right: 3px;
+}
+
+.WESNet_TimeSpanPicker .SignToggle
+{
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 0px;
+    padding-bottom: 3px;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+    width: 16px;
+    height: 18px;
+}
+
+.WESNet_ByInvitation_Settings select {
+    float: left;
+    margin-right: 10px;
+}
+
+.WESNet_ByInvitation_Settings .RoleBasedLimits .dnnGrid
+{
+    float: left;
+    clear: right;
+    width: 500px;
+}
+
+.WESNet_ByInvitation_Settings div.EditRoleBasedLimits
+{
+    margin-top: 20px;
+    background: #eeeeee;
+}
+
+.WESNet_ByInvitation_Settings div.EditRoleBasedLimits ul.dnnActions
+{
+    padding-top: 0!important;
+    padding-bottom: 20px!important;
+}
+
+/*.WESNet_ByInvitation_Settings input[type="text"] + a
+{
+    margin-left: 10px;
+}*/
+
+div.ProgressBar
+{
+    text-align:center;
+    font-family: Arial;
+    font-size: 10pt;
+    color: black;
+    border: 3px solid #67CFF5;
+    width: 250px;
+    min-height: 75px;
+    padding: 8px;
+    display: none;
+    position: fixed;
+    background-color: White;
+    z-index: 999;
+}
+
+div.progressBarModal
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 99;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    min-height: 100%;
+    width: 100%;
+}
+
+div.CompletionSummary
+{
+    font-size: 10px;
+    padding: 5px;
+    width: 60%;
+    height: 400px;
+    border: 1px solid gray;
+    overflow-y: auto;
+}
+
+#WESNet_ByInvitation_BulkImport div.dnnFormMessage
+{
+    margin-top:18px;
+}
+
+#WESNet_ByInvitation_BulkImport th.dnnFormRequired:after
+{
+    content: "*";
+    display: inline-block;
+    margin: 0 0 0 2px;
+    color: Red;
+    font-size: 16px;
+    line-height: 1em;
+    font-weight: bold;
+}
+
+#WESNet_ByInvitation_BulkImport .Unmapped
+{
+	background-image: url("../../icons/sigma/Unchecked_16X16_Standard.png");
+}
+
+#WESNet_ByInvitation_BulkImport .Mapped
+{
+	background-image: url("../../icons/sigma/Checked_16X16_Standard_2.png");
+}
+
+#WESNet_ByInvitation_BulkImport table.previewData
+{
+    width: 100%;
+    overflow: auto;
+    margin-top:10px;
+}
+
+#tblDataFieldMappingGrid
+{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+    table-layout: auto;
+    empty-cells: show;
+    overflow: auto;
+}
+
+#WESNet_ByInvitation_ManageInvitations .Search
+{
+    float: left;
+    margin-left: 15px;
+}
+
+/* The following styles extracted from DesktopModules/Admin/Security/module.css */
+
+.dnnProfileDetails .dnnFormItem .dnnTooltip
+{
+    width: 20%;
+}
+.dnnProfileDetails .dnnFormItem select.dnnFormVisibility
+{
+    width: 100px;
+}
+
+.dnnProfileDetails .dnnFormItem input[type="text"],
+.dnnProfileDetails .dnnFormItem textarea,
+.dnnProfileDetails .dnnFormItem select,
+.dnnProfileDetails .RadPicker{
+    display: block;
+    float: left;
+    width: 300px;
+}
+.dnnProfileDetails .dnnFormItem .dnnDropDownList input[type="text"] {
+    float: none;
+}
+.dnnProfileDetails .RadPicker .riTextBox {
+	height: auto;
+}
+.dnnProfileDetails .dnnFormItem select{
+    width: 315px;
+}
+
+.dnnProfileDetails .dnnFormItem .dnnLeft select{
+    display: block;
+    float: left;
+}
+.dnnProfileDetails .dnnFormItem .dnnFormVisibility
+{
+    width: 10%;
+    float: left;
+}
+
+.dnnProfileDetails .dnnFormItem .dnnFormInput input[type="radio"]
+{
+    width: 8%;
+    float: none;
+}
+
+.dnnProfile .dnnFormRadioButtons input
+{
+    float: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.dnnProfile .dnnFormRadioButtons select
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.dnnProfile .dnnFormItem input[type="text"], .dnnProfile .dnnFormItem select, .dnnProfile .dnnFormItem textarea
+{
+    margin-right: 10px;
+}
+.dnnButtonIcon{
+    background: transparent url(../../images/visibility.png) no-repeat center;
+}
+/*  fixed profile image upload */
+.dnnProfile .dnnFileUploadScope {
+    display: inline-block;
+    background-color: #F0F0F0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 0;
+    width: 500px;
+}
+
+    .dnnProfile .dnnFileUploadScope > div:first-child {
+        float: right;
+        width: 250px;
+    }
+
+    .dnnProfile .dnnFileUploadScope .dnnLeft .dnnFormItem {
+        width: 250px;
+    }
+
+        .dnnProfile .dnnFileUploadScope .dnnLeft .dnnFormItem .dnnDropDownList {
+            width: 80%;
+        }
+
+        .dnnProfile .dnnFileUploadScope .dnnLeft .dnnFormItem input[type="button"] {
+            margin-left: 45px;
+            width: 80%;
+       }
+
+        .dnnProfile .dnnFileUploadScope .dnnLeft .dnnFormItem.dnnFileUploadFolder {
+            display: none !important;
+        }
+
+
+
+
+

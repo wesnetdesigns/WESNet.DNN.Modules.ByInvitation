@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BrowseFile.Help" xml:space="preserve">
+    <value>Click the Browse button to select the import file from your computer then click Next to continue.</value>
+  </data>
+  <data name="BrowseFile.Text" xml:space="preserve">
+    <value>Browse for Import File</value>
+  </data>
+  <data name="cmdCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CSV.Text" xml:space="preserve">
+    <value>Comma Separated Values File (.csv or .txt)</value>
+  </data>
+  <data name="ControlTitle_bulkimport.Text" xml:space="preserve">
+    <value>Bulk Import Invitations</value>
+  </data>
+  <data name="DatabaseConnection.Text" xml:space="preserve">
+    <value>MS SQL Server Database Connection</value>
+  </data>
+  <data name="Excel.Text" xml:space="preserve">
+    <value>Excel Spreadsheet File (.xls or .xlsx)</value>
+  </data>
+  <data name="Introduction.Help" xml:space="preserve">
+    <value>This wizard steps you through the process of bulk importing invitation data from a CSV, MS Excel, XML, MS Access Database File or MS SQL Database Connection.</value>
+  </data>
+  <data name="Introduction.Title" xml:space="preserve">
+    <value>Bulk Import Invitations</value>
+  </data>
+  <data name="plImportSourceType.Help" xml:space="preserve">
+    <value>Select the import source type</value>
+  </data>
+  <data name="plImportSourceType.Text" xml:space="preserve">
+    <value>Import Source Type</value>
+  </data>
+  <data name="plLoadErrors.Help" xml:space="preserve">
+    <value>Any errors encounted while initially loading and parsing the import file will be listed here.</value>
+  </data>
+  <data name="plLoadErrors.Text" xml:space="preserve">
+    <value>Import File Load Errors</value>
+  </data>
+  <data name="plLoadStatistics.Help" xml:space="preserve">
+    <value>Here can see statistics regarding the import such as the number of invitations imported.</value>
+  </data>
+  <data name="plLoadStatistics.Text" xml:space="preserve">
+    <value>Load Statistics</value>
+  </data>
+  <data name="UploadResults.Title" xml:space="preserve">
+    <value>Upload Results</value>
+  </data>
+  <data name="Warnings.Help" xml:space="preserve">
+    <value>If you have reached this page it is because some component related to the bulk import is missing information.</value>
+  </data>
+  <data name="XML.Text" xml:space="preserve">
+    <value>XML File (.xml)</value>
+  </data>
+  <data name="CreateAndSendInvitations.Help" xml:space="preserve">
+    <value>You are now ready to begin creating invitations from the imported data and sending them via email to the recipients and to those who are configured in the module's settings to recieve a copy of the invitation. Click the 'Next' button after you have verified that you have selected the proper Send Method or 'Previous' button to select a different Send Method or make other modifications to this import.</value>
+  </data>
+  <data name="CreateAndSendInvitations.Title" xml:space="preserve">
+    <value>Create And Send Invitations</value>
+  </data>
+  <data name="plImportFile.Help" xml:space="preserve">
+    <value>Click the browse button to locate the import file on your local computer. After opening the file, click on the "Upload File" link to upload the selected file.</value>
+  </data>
+  <data name="plImportFile.Text" xml:space="preserve">
+    <value>Import File</value>
+  </data>
+  <data name="Review.Help" xml:space="preserve">
+    <value>During this step of the import wizard you will reveiw the imported invitation data and setup the matching of import field names to those used in the invitation form.</value>
+  </data>
+  <data name="Review.Title" xml:space="preserve">
+    <value>Review Imported Invitation Data</value>
+  </data>
+  <data name="Comma.Text" xml:space="preserve">
+    <value>Comma (',')</value>
+  </data>
+  <data name="plCSVFirstRow.Help" xml:space="preserve">
+    <value>If the first row of data in your imported comma separated values file contains field names, this box should be checked.</value>
+  </data>
+  <data name="plCSVFirstRow.Text" xml:space="preserve">
+    <value>First Row Contains Field Names</value>
+  </data>
+  <data name="plDatabase.Text" xml:space="preserve">
+    <value>Database Name</value>
+  </data>
+  <data name="plDbPassword.Text" xml:space="preserve">
+    <value>Database Password</value>
+  </data>
+  <data name="plDbUser.Text" xml:space="preserve">
+    <value>Database Username</value>
+  </data>
+  <data name="plCSVDelimiter.Help" xml:space="preserve">
+    <value>Select the character that separates fields in the imported CSV file. The most commonly used is the comma.</value>
+  </data>
+  <data name="plCSVDelimiter.Text" xml:space="preserve">
+    <value>Delimiter Character</value>
+  </data>
+  <data name="plExcelFirstRow.Help" xml:space="preserve">
+    <value>If the first spreadsheet row in your imported Excel file contains the column Field Names, check this box.</value>
+  </data>
+  <data name="plExcelFirstRow.Text" xml:space="preserve">
+    <value>First Row Contains Field Names</value>
+  </data>
+  <data name="SemiColon.Text" xml:space="preserve">
+    <value>Semi-Colon (';')</value>
+  </data>
+  <data name="Space.Text" xml:space="preserve">
+    <value>Space</value>
+  </data>
+  <data name="Tab.Text" xml:space="preserve">
+    <value>Tab</value>
+  </data>
+  <data name="plDataFieldMapping.Help" xml:space="preserve">
+    <value>Click on the intersection of import file field names (left) and invitation field names (top) to map the appropriate fields of information. Invitation fields marked with a red '*' MUST be mapped to an import field.</value>
+  </data>
+  <data name="plDataFieldMapping.Text" xml:space="preserve">
+    <value>Map Imported Data Fields</value>
+  </data>
+  <data name="plPreviewData.Help" xml:space="preserve">
+    <value>Here you may preview the first few records of imported data.</value>
+  </data>
+  <data name="plPreviewData.Text" xml:space="preserve">
+    <value>Preview Imported Data</value>
+  </data>
+  <data name="Pipe.Text" xml:space="preserve">
+    <value>Pipe ('|')</value>
+  </data>
+  <data name="DatabaseFile.Text" xml:space="preserve">
+    <value>MS Access Database File (.mdb or .accdb)</value>
+  </data>
+  <data name="SelectDataSource.Title" xml:space="preserve">
+    <value>Select Data Source</value>
+  </data>
+  <data name="SelectDataSource.Help" xml:space="preserve">
+    <value>Select the file containing the bulk invitation data from the server or from a file on your computer or specify the connection string information and table name for a MS SQL Server database connection.</value>
+  </data>
+  <data name="Async.Text" xml:space="preserve">
+    <value>Asynchronous</value>
+  </data>
+  <data name="plSendBatchInteval.Help" xml:space="preserve">
+    <value>Enter the time (in minutes) to wait between sending each batch of invitations </value>
+  </data>
+  <data name="plSendBatchInteval.Text" xml:space="preserve">
+    <value>Inteval to Wait Between Batches</value>
+  </data>
+  <data name="plSendBatchSize.Help" xml:space="preserve">
+    <value>Enter the maximum number of invitations to be sent in each batch.</value>
+  </data>
+  <data name="plSendBatchSize.Text" xml:space="preserve">
+    <value>Invitations Sent In Batch</value>
+  </data>
+  <data name="plSendMethod.Help" xml:space="preserve">
+    <value>If you have just a few invitations to be sent you may choose the Synchronous method which will begin creating and sending all emails immediately. Do not close the Bulk Import Invitation Wizard until you receive confirmation that all have been sent. Alternatively you may select the Asynchronous method which will create and send the invitation emails as a background task allowing you to exit the Wizard immediately. You will receive a confirmation email showing how many invitations were sent and any errors. HOWEVER, if you have many invitations to be sent and are concerned that your email provider's frequency or numeric limit on sending emails may be exceeded, use the Secheduled Job method. You will be able to specify when sending should start, how many emails may be sent in a batch, and how long to wait between sending each batch of invitations.</value>
+  </data>
+  <data name="plSendMethod.Text" xml:space="preserve">
+    <value>Invitation Send Method</value>
+  </data>
+  <data name="plSenderEmail.Help" xml:space="preserve">
+    <value>Optionally enter your email address. If left blank, invitations will be sent out using the site's designated administrator account email address. This same email address will be used as the address to which notifications are sent concerning the progress and errors encountered while mailing invitations.</value>
+  </data>
+  <data name="plSenderEmail.Text" xml:space="preserve">
+    <value>Sender's Email</value>
+  </data>
+  <data name="plPersonalNote.Help" xml:space="preserve">
+    <value>Optionally enter a personal note that will be inserted in all invitation emails should the imported invitation data not contain a Personal Note field for individual recipients.</value>
+  </data>
+  <data name="plPersonalNote.Text" xml:space="preserve">
+    <value>Personal Note</value>
+  </data>
+  <data name="plRedirectOnFirstLogin.Help" xml:space="preserve">
+    <value>Optionally select a page to which all recipients will be redirected following acceptance of the invitation should the imported data not contain a Redirect On First Login field for individual recipients.</value>
+  </data>
+  <data name="plRedirectOnFirstLogin.Text" xml:space="preserve">
+    <value>Redirect On First Login</value>
+  </data>
+  <data name="plScheduledJobStartsAt.Help" xml:space="preserve">
+    <value>Select when the scheduled job of sending the invitations should begin.</value>
+  </data>
+  <data name="plScheduledJobStartsAt.Text" xml:space="preserve">
+    <value>Scheduled Job Starts At</value>
+  </data>
+  <data name="Scheduled.Text" xml:space="preserve">
+    <value>Scheduled Job</value>
+  </data>
+  <data name="SetCreationOptions.Help" xml:space="preserve">
+    <value>During this step of the import wizard you will set options related to the creation and sending of the invitations.</value>
+  </data>
+  <data name="SetCreationOptions.Title" xml:space="preserve">
+    <value>Set Invitation Creation Options</value>
+  </data>
+  <data name="Sync.Text" xml:space="preserve">
+    <value>Synchronous</value>
+  </data>
+  <data name="valInvitingUserEmail.RegexInvalid" xml:space="preserve">
+    <value>The format of the Inviting User Email is invalid.</value>
+  </data>
+  <data name="plIntegratedSecurity.Text" xml:space="preserve">
+    <value>Use Integrated Security</value>
+  </data>
+  <data name="plIntegratedSecurity.Help" xml:space="preserve">
+    <value>Check this box when using MS SQL Server integrated security rather than SQL Server login with username and password.</value>
+  </data>
+  <data name="plDatabase.Help" xml:space="preserve">
+    <value>Select the name of the database from which the invitations will be imported.</value>
+  </data>
+  <data name="plDataSource.Help" xml:space="preserve">
+    <value>Enter the instance name of the database server.</value>
+  </data>
+  <data name="plDataSource.Text" xml:space="preserve">
+    <value>Data Source</value>
+  </data>
+  <data name="plDbPassword.Help" xml:space="preserve">
+    <value>Enter the password for the above database user.</value>
+  </data>
+  <data name="plDatabaseTableName.Help" xml:space="preserve">
+    <value>Select the name of the database table containing the invitations to be imported.</value>
+  </data>
+  <data name="plDatabaseTableName.Text" xml:space="preserve">
+    <value>Database Table Name</value>
+  </data>
+  <data name="plDbUser.Help" xml:space="preserve">
+    <value>Enter the name of the database user under whose account the daterbase will be accessed.</value>
+  </data>
+  <data name="Finish.Text" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="cmdResume.Text" xml:space="preserve">
+    <value>Resume</value>
+  </data>
+  <data name="cmdStartOver.Text" xml:space="preserve">
+    <value>Start Over</value>
+  </data>
+  <data name="ResumeWizard.Text" xml:space="preserve">
+    <value>You have previously begun but not completed the steps of setting up a Bulk Import.  Would you like to resume the import setup wizard at the last completed step, start over, or cancel?</value>
+  </data>
+  <data name="plConnectionStringKey.Help" xml:space="preserve">
+    <value>Host users are permitted to select  from one of the database connection strings registered in the site's web.config file. SiteSqlServer is the DNN website framework's default database connection string.</value>
+  </data>
+  <data name="plConnectionStringKey.Text" xml:space="preserve">
+    <value>Connection String Key</value>
+  </data>
+  <data name="plRecipientCultureCode.Help" xml:space="preserve">
+    <value>Fall back culture code to be used whenever imported invitation data does not include a field for culture code of the recipient.</value>
+  </data>
+  <data name="plRecipientCultureCode.Text" xml:space="preserve">
+    <value>Fallback Culture Code</value>
+  </data>
+  <data name="NoneSelected.Text" xml:space="preserve">
+    <value>&lt;None Selected&gt;</value>
+  </data>
+  <data name="Async.Help" xml:space="preserve">
+    <value>You have selected that imported data will be processed asynchronously. Invitations will be created and sent via email as a  background task allowing you to exit the Wizard immediately. When the background task has been completed, you will receive a notification showing how many invitations were created, sent and a list of any errors encountered. This method is good for handling a moderate number of invitations.</value>
+  </data>
+  <data name="Scheduled.Help" xml:space="preserve">
+    <value>You have selected that imported data will be processed as a scheduled job. Processing will begin sometime after the specified scheduled job start time and will be done in batches of the specified size at specified intervals to avoid exceeding your outgoing email server's frequency or numeric limit. You will receive periodic notifications showing how many invitations wre created, sent and a list of any errors encountered. This method is best for handling a large number of invitations or when your email server's capacity is restricted.</value>
+  </data>
+  <data name="Sync.Help" xml:space="preserve">
+    <value>You have selected that imported data will be processed synchronously. Invitations will be created and sent via email immediately. A progress bar will be displayed. DO NOT CLOSE the Bulk Import Invitation Wizard or click 'Finish' until you receive confirmation that all imported data has been processed and the invitations created and sent. This method is best when importing data for just a few invitations.</value>
+  </data>
+  <data name="plItemNodeName.Help" xml:space="preserve">
+    <value>Select the name of the XML nodes which contain the information for each invitation to be imported.</value>
+  </data>
+  <data name="plItemNodeName.Text" xml:space="preserve">
+    <value>Invitation Item Node Name</value>
+  </data>
+  <data name="Completion.Help" xml:space="preserve">
+    <value>If you had selected synchronous processing of the bulk import, all processing is now complete with the results displayed below. Otherwise, processing will continue in the background until all invitations have been created and sent. In either case, you may receive periodic notifications concerning the status of each invitation. You may also want to periodicaly use the Manage Invitations button to check on or further manage individual invitations.</value>
+  </data>
+  <data name="Completion.Title" xml:space="preserve">
+    <value>Bulk Import Wizard Completed</value>
+  </data>
+  <data name="plCompletionSummary.Help" xml:space="preserve">
+    <value>Returns information about the just completed import of invitation data when synchronous processing was selected.</value>
+  </data>
+  <data name="plCompletionSummary.Text" xml:space="preserve">
+    <value>Completion Summary</value>
+  </data>
+  <data name="UploadFile.Text" xml:space="preserve">
+    <value>Upload File</value>
+  </data>
+  <data name="AsyncNotImplemented.Text" xml:space="preserve">
+    <value>Asynchronous processing not implemented. Please click the Previous button to select either the Synchronous or Scheduled Job methods.</value>
+  </data>
+  <data name="DatabaseConnectionConfigurationError.Text" xml:space="preserve">
+    <value>Unable to open database with the supplied connection configuration - Error: </value>
+  </data>
+  <data name="DatabaseOpenedSuccessfully.Text" xml:space="preserve">
+    <value>The database was successfully opened with specified connection string.</value>
+  </data>
+  <data name="DataSourceFormatUnrecognizable.Text" xml:space="preserve">
+    <value>Data source was of an unrecognizable format. Error:</value>
+  </data>
+  <data name="ImportFileNotFound.Text" xml:space="preserve">
+    <value>Specified import file '{0}' was not found.</value>
+  </data>
+  <data name="InvalidFilenameExtension.Text" xml:space="preserve">
+    <value>The filename extension ('{0}') of the selected import file is not valid for the type of import specified.</value>
+  </data>
+  <data name="NoDatabaseConnectionConfigured.Text" xml:space="preserve">
+    <value>No database connection has been configured. Click the 'Previous' button and enter the appropriate connection information.</value>
+  </data>
+  <data name="NoImportFileUploadedOrSelected.Text" xml:space="preserve">
+    <value>No import file was uploaded or selected.</value>
+  </data>
+  <data name="OleDbProviderFailure.Text" xml:space="preserve">
+    <value>Attempt to open Microsoft Access database file '{0}' with '{1}' OLE DB provider failed with error: {2}</value>
+  </data>
+  <data name="RequiredFieldNotMapped.Text" xml:space="preserve">
+    <value>Invitation field '{0}' is a required field but is not mapped to one of the import fields.</value>
+  </data>
+  <data name="UnableToOpenDatabaseTable.Text" xml:space="preserve">
+    <value>Unable to open database table to construct preview - Error: </value>
+  </data>
+  <data name="UnableToOpenDataSourceOrPreview.Text" xml:space="preserve">
+    <value>Unable to open data source or preview data. Error: </value>
+  </data>
+  <data name="Custom.Text" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="FatalErrorWhileCreatingInvitations.Text" xml:space="preserve">
+    <value>A fatal error occurred while creating invitations. Further processing has been discontinued. Error: {0}</value>
+  </data>
+  <data name="NoInvitationsCreated.Text" xml:space="preserve">
+    <value>No invitations were created. Please resolve any import data errors noted below and rerun the Bulk Import wizard or click 'Previous' to reconfigure the import settings.</value>
+  </data>
+</root>

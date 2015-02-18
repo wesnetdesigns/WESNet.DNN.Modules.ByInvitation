@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Email.Header" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ExpiresOnDate.Header" xml:space="preserve">
+    <value>Expires On</value>
+  </data>
+  <data name="InvitedOnDate.Header" xml:space="preserve">
+    <value>Invited On</value>
+  </data>
+  <data name="LastResentOnDate.Header" xml:space="preserve">
+    <value>Last Resent On</value>
+  </data>
+  <data name="Recipient.Header" xml:space="preserve">
+    <value>Recipient</value>
+  </data>
+  <data name="plInvitingUser.Help" xml:space="preserve">
+    <value>Select to show invitations sent by either All Users or a specific user.</value>
+  </data>
+  <data name="plInvitingUser.Text" xml:space="preserve">
+    <value>Inviting User</value>
+  </data>
+  <data name="ResentCount.Header" xml:space="preserve">
+    <value>Times Resent</value>
+  </data>
+  <data name="Selected.Header" xml:space="preserve">
+    <value>Selected</value>
+  </data>
+  <data name="AllUsers.Text" xml:space="preserve">
+    <value>All Inviting Users</value>
+  </data>
+  <data name="plDateRange.Help" xml:space="preserve">
+    <value>Enter the start and end dates of the period in which the invitations were created.</value>
+  </data>
+  <data name="plDateRange.Text" xml:space="preserve">
+    <value>Date Range</value>
+  </data>
+  <data name="AcceptedInvitations.Text" xml:space="preserve">
+    <value>Accepted Invitations</value>
+  </data>
+  <data name="DeclinedInvitations.Text" xml:space="preserve">
+    <value>Declined Invitations</value>
+  </data>
+  <data name="InvitedBy.Header" xml:space="preserve">
+    <value>Invited By</value>
+  </data>
+  <data name="PendingInvitations.Text" xml:space="preserve">
+    <value>Pending Invitations</value>
+  </data>
+  <data name="RetractedInvitations.Text" xml:space="preserve">
+    <value>Retracted Invitations</value>
+  </data>
+  <data name="ExpiredInvitations.Text" xml:space="preserve">
+    <value>Expired Invitations</value>
+  </data>
+  <data name="plShowArchived.Help" xml:space="preserve">
+    <value>When checked invitations that have been previously marked as 'Archived' will be displayed in the appropriate section.</value>
+  </data>
+  <data name="plShowArchived.Text" xml:space="preserve">
+    <value>Show Archived Invitations</value>
+  </data>
+  <data name="AcceptedOnDate.Header" xml:space="preserve">
+    <value>Accepted On</value>
+  </data>
+  <data name="cmdRefresh.Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="DeclinedOnDate.Header" xml:space="preserve">
+    <value>Declined On</value>
+  </data>
+  <data name="ExpiredOnDate.Header" xml:space="preserve">
+    <value>Expired On</value>
+  </data>
+  <data name="ReasonDeclined.Header" xml:space="preserve">
+    <value>Reason Declined</value>
+  </data>
+  <data name="RetractedOnDate.Header" xml:space="preserve">
+    <value>Retracted On</value>
+  </data>
+  <data name="Username.Header" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="Archive.Text" xml:space="preserve">
+    <value>Archive Invitation</value>
+  </data>
+  <data name="Edit.Text" xml:space="preserve">
+    <value>Edit Invitation</value>
+  </data>
+  <data name="Extend.Text" xml:space="preserve">
+    <value>Extend Expiration Date</value>
+  </data>
+  <data name="Unretract.Text" xml:space="preserve">
+    <value>Unretract Invitation</value>
+  </data>
+  <data name="Resend.Text" xml:space="preserve">
+    <value>Resend Invitation</value>
+  </data>
+  <data name="Retract.Text" xml:space="preserve">
+    <value>Retract Invitation</value>
+  </data>
+  <data name="lnkSearchAgain.Text" xml:space="preserve">
+    <value>Search Again</value>
+  </data>
+  <data name="Delete.Text" xml:space="preserve">
+    <value>Delete Expired Invitation</value>
+  </data>
+  <data name="InvitingUserStats.Text" xml:space="preserve">
+    <value>Invitation Statistics for Currently Selected User</value>
+  </data>
+  <data name="plTotalInvitationCount.Help" xml:space="preserve">
+    <value>The total number of invitations created by selected user.</value>
+  </data>
+  <data name="plTotalInvitationCount.Text" xml:space="preserve">
+    <value>Total Invitations Created</value>
+  </data>
+  <data name="plUserDisplayName.Help" xml:space="preserve">
+    <value>The displayname for the currently selected user.</value>
+  </data>
+  <data name="plUserDisplayName.Text" xml:space="preserve">
+    <value>Display Name</value>
+  </data>
+  <data name="plApprovedInvitationCount.Help" xml:space="preserve">
+    <value>The total number of invitations created by the selected user which were then approved by a moderator.</value>
+  </data>
+  <data name="plApprovedInvitationCount.Text" xml:space="preserve">
+    <value>Approved Invitations</value>
+  </data>
+  <data name="plAcceptedInvitationCount.Help" xml:space="preserve">
+    <value>The number of invitations that have been accepted by the recipient.</value>
+  </data>
+  <data name="plAcceptedInvitationCount.Text" xml:space="preserve">
+    <value>Accepted Invitations</value>
+  </data>
+  <data name="plDeclinedInvitationCount.Help" xml:space="preserve">
+    <value>The number of invitations created by the selected user that have been declined by the recipient.</value>
+  </data>
+  <data name="plDeclinedInvitationCount.Text" xml:space="preserve">
+    <value>Declined Invitations</value>
+  </data>
+  <data name="plExpiredInvitationCount.Help" xml:space="preserve">
+    <value>The number of invitations created and sent by this user that have expired before acceptance or rejection.</value>
+  </data>
+  <data name="plExpiredInvitationCount.Text" xml:space="preserve">
+    <value>Expired Invitations</value>
+  </data>
+  <data name="plLastInvitedOnDate.Help" xml:space="preserve">
+    <value>The last date and time the selected user created an invitation.</value>
+  </data>
+  <data name="plLastInvitedOnDate.Text" xml:space="preserve">
+    <value>Last Invitation Created On</value>
+  </data>
+  <data name="plPendingInvitationCount.Help" xml:space="preserve">
+    <value>The number of invitations created and sent by this user that are no awaiting acceptance, rejection or expiration.</value>
+  </data>
+  <data name="plPendingInvitationCount.Text" xml:space="preserve">
+    <value>Pending Invitations</value>
+  </data>
+  <data name="ResentOnDate.Header" xml:space="preserve">
+    <value>Resent On</value>
+  </data>
+  <data name="AnonymousUsers.Text" xml:space="preserve">
+    <value>Anonymous Users</value>
+  </data>
+  <data name="AllAnonymousUsers.Text" xml:space="preserve">
+    <value>All Anonymous Users</value>
+  </data>
+  <data name="plAnonymousUser.Help" xml:space="preserve">
+    <value>Select a particular anonymous user by their display name.</value>
+  </data>
+  <data name="plAnonymousUser.Text" xml:space="preserve">
+    <value>Anonymous Users</value>
+  </data>
+  <data name="Approve.Text" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="Disapprove.Text" xml:space="preserve">
+    <value>Disapprove</value>
+  </data>
+  <data name="EditApprove.Text" xml:space="preserve">
+    <value>Edit Approve</value>
+  </data>
+  <data name="plDisapprovedInvitationCount.Help" xml:space="preserve">
+    <value>The total number of invitations created by the selected user which were then disapproved by a moderator.</value>
+  </data>
+  <data name="plDisapprovedInvitationCount.Text" xml:space="preserve">
+    <value>Disapproved Invitations</value>
+  </data>
+  <data name="plSentInvitationCount.Help" xml:space="preserve">
+    <value>The total number of invitations sent by the selected user. Does not include invitations that are awaiting moderation prior to being sent.</value>
+  </data>
+  <data name="plSentInvitationCount.Text" xml:space="preserve">
+    <value>Sent Invitations</value>
+  </data>
+  <data name="Unmoderated.Text" xml:space="preserve">
+    <value>Unmoderated</value>
+  </data>
+  <data name="plRetractedInvitationCount.Help" xml:space="preserve">
+    <value>The total number of invitations sent by the selected user but retracted before being accepted or declined by the recipient.</value>
+  </data>
+  <data name="plRetractedInvitationCount.Text" xml:space="preserve">
+    <value>Retracted Invitations</value>
+  </data>
+</root>

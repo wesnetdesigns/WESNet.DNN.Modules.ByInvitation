@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAddRole.AlternateText" xml:space="preserve">
+    <value>Add Role</value>
+  </data>
+  <data name="btnAddRole.Text" xml:space="preserve">
+    <value>Add Role</value>
+  </data>
+  <data name="btnSendInvitation.AlternateText" xml:space="preserve">
+    <value>Send An Invitation</value>
+  </data>
+  <data name="btnSendInvitation.Text" xml:space="preserve">
+    <value>Send An Invitation</value>
+  </data>
+  <data name="cbGenerateRandomPassword.Text" xml:space="preserve">
+    <value>Generate a Random Password</value>
+  </data>
+  <data name="cmdCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="EditRole.AlternateText" xml:space="preserve">
+    <value>Edit Role</value>
+  </data>
+  <data name="EditRole.Text" xml:space="preserve">
+    <value>Edit Role</value>
+  </data>
+  <data name="EditRole.Title" xml:space="preserve">
+    <value>Edit Role</value>
+  </data>
+  <data name="EffectiveDate.Header" xml:space="preserve">
+    <value>Effective On</value>
+  </data>
+  <data name="ExpiryDate.Header" xml:space="preserve">
+    <value>Expires On</value>
+  </data>
+  <data name="InvitationForm.Text" xml:space="preserve">
+    <value>Invitation Details</value>
+  </data>
+  <data name="plAddRole.Help" xml:space="preserve">
+    <value>To add an available role to the Assigned Roles grid above, select the desired role from the drop-down list then click the 'Add' button to the right.</value>
+  </data>
+  <data name="plAddRole.Text" xml:space="preserve">
+    <value>Add Selected Role</value>
+  </data>
+  <data name="plAssignedDisplayName.Help" xml:space="preserve">
+    <value>Enter a display name to be assigned to the recipient when the invitation is accepted.</value>
+  </data>
+  <data name="plAssignedDisplayName.Text" xml:space="preserve">
+    <value>Assigned Display Name</value>
+  </data>
+  <data name="plAssignedRoles.Help" xml:space="preserve">
+    <value>To assign one or more non-automatic security roles that will be applied to the recipient's account when the invitation is accepted, first select an available role from the drop-down list and click the 'Add' button. You may also click on a role that is already assigned in the below list to edit its effective and expires date and set the website page to which the recipient will be redirected when logging in for the first time.</value>
+  </data>
+  <data name="plAssignedRoles.Text" xml:space="preserve">
+    <value>Assigned Security Roles</value>
+  </data>
+  <data name="plAssignedUsername.Help" xml:space="preserve">
+    <value>Enter a username to be assigned to the recipient when the invitation is accepted.</value>
+  </data>
+  <data name="plAssignedUsername.Text" xml:space="preserve">
+    <value>Assigned Username</value>
+  </data>
+  <data name="plPersonalNote.Help" xml:space="preserve">
+    <value>Enter a personal note (optional) to be included in the invitation emailed to the recipient.</value>
+  </data>
+  <data name="plPersonalNote.Text" xml:space="preserve">
+    <value>Personal Note</value>
+  </data>
+  <data name="plRecipientEmail.Help" xml:space="preserve">
+    <value>Enter the invitation recipient's email address. If the address is not valid, the recipient will not be able to receive the invitation.</value>
+  </data>
+  <data name="plRecipientEmail.Text" xml:space="preserve">
+    <value>Recipient's Email</value>
+  </data>
+  <data name="plRecipientEmail2.Help" xml:space="preserve">
+    <value>Enter the recipient's email address to confirm that you have entered it correctly above.</value>
+  </data>
+  <data name="plRecipientEmail2.Text" xml:space="preserve">
+    <value>Confirm Recipient's Email</value>
+  </data>
+  <data name="plRecipientFirstName.Help" xml:space="preserve">
+    <value>Enter the invitation recipient's first name.</value>
+  </data>
+  <data name="plRecipientFirstName.Text" xml:space="preserve">
+    <value>Recipient's First Name</value>
+  </data>
+  <data name="plRecipientLastName.Help" xml:space="preserve">
+    <value>Enter the invitation recipient's last name.</value>
+  </data>
+  <data name="plRecipientLastName.Text" xml:space="preserve">
+    <value>Recipient's Last name</value>
+  </data>
+  <data name="plTemporaryPassword.Help" xml:space="preserve">
+    <value>Enter a temporary password that will be assigned to the recipient's account when the invitation is accepted. The new user may change the temporary password to one of his/her choosing at a later date. Alternatively you may generate a temporary password containing random characters by checking the "Generate Random Password" checkbox.</value>
+  </data>
+  <data name="plTemporaryPassword.Text" xml:space="preserve">
+    <value>Temporary Password</value>
+  </data>
+  <data name="RemoveRole.AlternateText" xml:space="preserve">
+    <value>Remove Role</value>
+  </data>
+  <data name="RemoveRole.Text" xml:space="preserve">
+    <value>Remove Role</value>
+  </data>
+  <data name="RemoveRole.Title" xml:space="preserve">
+    <value>RemoveRole</value>
+  </data>
+  <data name="RoleDescription.Header" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="RoleName.Header" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="Roles.Text" xml:space="preserve">
+    <value>Assigned Security Roles</value>
+  </data>
+  <data name="TrialUsed.Header" xml:space="preserve">
+    <value>Use Trial</value>
+  </data>
+  <data name="valAssignedUsername.RegexInvalid" xml:space="preserve">
+    <value>The assigned username does not conform to the character pattern required by this website.</value>
+  </data>
+  <data name="valAssignedUsername.Required" xml:space="preserve">
+    <value>You must enter a username that will be assigned to the recipient's account when the invitation is accepted.</value>
+  </data>
+  <data name="valRecipientEmail.RegexInvalid" xml:space="preserve">
+    <value>The entered email does not contain an acceptable pattern of characters.</value>
+  </data>
+  <data name="valRecipientEmail.Required" xml:space="preserve">
+    <value>A valid email address for the recipient is required.</value>
+  </data>
+  <data name="valRecipientEmail2.CompareInvalid" xml:space="preserve">
+    <value>The second entry of the recipient's email does not match the first entry.</value>
+  </data>
+  <data name="valRecipientEmail2.Required" xml:space="preserve">
+    <value>You must enter the recipient's email address a second time for confirmation.</value>
+  </data>
+  <data name="valTemporaryPassword.RegexInvalid" xml:space="preserve">
+    <value>The temporary password you entered does not meet the requirements of this website for a secure password. Use additional characters including numbers and punctuation marks to make it more secure.</value>
+  </data>
+  <data name="valTemporaryPassword.Required" xml:space="preserve">
+    <value>You must enter a temporary password that wil lbe assigned to the recipient's account when the invitation is accepted.</value>
+  </data>
+  <data name="valTemporaryPassword2.CompareInvalid" xml:space="preserve">
+    <value>The confirmation entry does not match the temporary password you entered above.</value>
+  </data>
+  <data name="valTemporaryPassword2.Required" xml:space="preserve">
+    <value>You must retype the temporary password you entered above as confirmation of its entry.</value>
+  </data>
+  <data name="lnkBulkImportInvitations.Text" xml:space="preserve">
+    <value>Bulk Import Invitations</value>
+  </data>
+  <data name="lnkManageInvitations.Text" xml:space="preserve">
+    <value>Manage Your Invitations</value>
+  </data>
+  <data name="plTemporaryPassword2.Help" xml:space="preserve">
+    <value>You must re-enter the temporary password as confirmation.</value>
+  </data>
+  <data name="plTemporaryPassword2.Text" xml:space="preserve">
+    <value>Confirm Temporary Password</value>
+  </data>
+  <data name="imgCancel.Text" xml:space="preserve">
+    <value>Cancel Role Assignment</value>
+  </data>
+  <data name="imgDelete.Text" xml:space="preserve">
+    <value>Remove Role Assignment</value>
+  </data>
+  <data name="imgEdit.Text" xml:space="preserve">
+    <value>Edit Role Assignment</value>
+  </data>
+  <data name="imgSave.Text" xml:space="preserve">
+    <value>Save Role Assignment</value>
+  </data>
+  <data name="valRecipientFirstName.Required" xml:space="preserve">
+    <value>You must enter the recipient's first name.</value>
+  </data>
+  <data name="valRecipientLastName.Required" xml:space="preserve">
+    <value>You must enter the recipient's last name.</value>
+  </data>
+  <data name="plRecipientCultureCode.Help" xml:space="preserve">
+    <value>In a multi-language site you may select the recipient's preferred language allowing the emailed invitation text to appear in that language.</value>
+  </data>
+  <data name="plRecipientCultureCode.Text" xml:space="preserve">
+    <value>Recipient's Culture</value>
+  </data>
+  <data name="plRedirectOnFirstLogin.Help" xml:space="preserve">
+    <value>Select a site page to which the user will be redirected following successful login for the first time. Note if a page is not selected or if the roles to be assigned to the recipient do not permit access to this page, the user will be redirect to the site's home page.</value>
+  </data>
+  <data name="plRedirectOnFirstLogin.Text" xml:space="preserve">
+    <value>Redirect On First Login</value>
+  </data>
+  <data name="InvitationAllocationExceeded.Error" xml:space="preserve">
+    <value>You have no more invitations available to send out of your allocation of {0} every {1}. Please come back later or contact this site's administrator to increase your allocation.</value>
+  </data>
+  <data name="SubmissionStatus.Success" xml:space="preserve">
+    <value>Your invitation has been successfully sent to the recipient!</value>
+  </data>
+  <data name="plInvitedByUserEmail.Help" xml:space="preserve">
+    <value>Enter your own email address. If the address is not valid, you will not be able to track the status of the invitation.</value>
+  </data>
+  <data name="plInvitedByUserEmail.Text" xml:space="preserve">
+    <value>Your Email</value>
+  </data>
+  <data name="val2InvitedByUserEmail.RegexInvalid" xml:space="preserve">
+    <value>The email address that you entered for yourself does not contain an acceptible pattern of characters.</value>
+  </data>
+  <data name="valInvitedByUserEmail.Required" xml:space="preserve">
+    <value>You must enter your own email address.</value>
+  </data>
+  <data name="SelectRoleToAssign.Text" xml:space="preserve">
+    <value>&lt;Select Role To Assign To Recipient&gt;</value>
+  </data>
+  <data name="valAssignedDisplayName.Required" xml:space="preserve">
+    <value>You must enter a display name that will be assigned to the recipient's  account when the invitation is accepted.</value>
+  </data>
+  <data name="valAssignedDisplayName.RegexInvalid" xml:space="preserve">
+    <value>The display name does not conform to the allowed character pattern or contains prohibited terms.</value>
+  </data>
+  <data name="cmdSend.Text" xml:space="preserve">
+    <value>Send Invitation</value>
+  </data>
+  <data name="cmdUpdateAndResend.Text" xml:space="preserve">
+    <value>Update and Resend Invitation</value>
+  </data>
+  <data name="cmdUpdateOnly.Text" xml:space="preserve">
+    <value>Update Invitation</value>
+  </data>
+  <data name="ModerationRequired.Text" xml:space="preserve">
+    <value>Your invitation has been created but requires approval by a moderator before it will be automatically sent to the recipient.</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmdUpdateAndApprove.Text" xml:space="preserve">
+    <value>Update and Approve Invitation</value>
+  </data>
+  <data name="plInvitedByUserFullName.Help" xml:space="preserve">
+    <value>Enter your full name which will appear in the invitation.</value>
+  </data>
+  <data name="plInvitedByUserFullName.Text" xml:space="preserve">
+    <value>Your Full Name</value>
+  </data>
+  <data name="valInvitedByUserFullName.Required" xml:space="preserve">
+    <value>You must enter your full name.</value>
+  </data>
+</root>

@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ctlCaptcha.Error" xml:space="preserve">
+    <value>Incorrect security code was entered. Pleasse try again.</value>
+  </data>
+  <data name="ctlCaptcha.TextBoxLabel" xml:space="preserve">
+    <value>Enter the security code shown above into the box.</value>
+  </data>
+  <data name="ctlCaptchaAudioLinkButton.Text" xml:space="preserve">
+    <value>Get Audio Code</value>
+  </data>
+  <data name="ctlCaptchaLinkButton.Text" xml:space="preserve">
+    <value>Refresh Security Code</value>
+  </data>
+  <data name="Invitation.Body" xml:space="preserve">
+    <value>&lt;p&gt;Dear [Invitation:RecipientFirstName],&lt;/p&gt;
+&lt;p&gt;You have been invited by [Invitation:InvitedByUserDisplayname] to register as a user on/join the [Portal:PortalName] website.&lt;/p&gt;
+&lt;p&gt;Simply click on the 'JOIN NOW' link below to use your one-time RSVP code to easily register for site membership.&lt;/p&gt;
+&lt;p&gt;If you do not wish to accept this invitation click on the "DECLINE INVITATION" link to indicate that you do not wish to receive further invitations to join this website.&lt;/p&gt;
+{if ("[Invitation:AssignedUsername]" != "")}
+&lt;p&gt;Your Username will be: [Invitation:AssignedUsername]&lt;/p&gt;{endif}
+{if ("[Invitation:TemporaryPassword]" != "")}
+&lt;p&gt;Your Temporary Password will be: [Invitation:TemporaryPassword]&lt;/p&gt;
+&lt;p&gt;After logging in you may change your password by clicking on your username shown in the top left corner of each website page.&lt;/p&gt;{endif}
+&lt;p&gt;[Invitation:PersonalNote]&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="[Invitation:JoinUrl]"&gt;JOIN NOW&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href="[Invitation:DeclineUrl]"&gt;DECLINE INVITATION&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="Invitation.ButtonText" xml:space="preserve">
+    <value>Send Invitation</value>
+  </data>
+  <data name="Invitation.Html" xml:space="preserve">
+    <value>Click on the button below to invite a friend, co-worker or family member to register for membership on this website. They will be sent an email containing a clickable link and RSVP code to allow them to easily register.</value>
+  </data>
+  <data name="Invitation.Subject" xml:space="preserve">
+    <value>Invitation from [Invitation:InvitedByUserDisplayname] to join the [Portal:PortalName] Website</value>
+  </data>
+  <data name="InvitationProcessorPage.Text" xml:space="preserve">
+    <value>Invitation Processor Page</value>
+  </data>
+  <data name="Mapped.Text" xml:space="preserve">
+    <value>Mapped</value>
+  </data>
+  <data name="Unmapped.Text" xml:space="preserve">
+    <value>Unmapped</value>
+  </data>
+  <data name="SubmissionStatus.DuplicateEmail" xml:space="preserve">
+    <value>The recipient email address is a duplicate of the recipient of another invitation or already registered site user in a site requiring that usernames be unique email addresses.</value>
+  </data>
+  <data name="SubmissionStatus.InvalidRoleName" xml:space="preserve">
+    <value>The role ({0}) you have requested be assigned to the recipient upon acceptance either does not exist or you are not authorized to assign the particular role. The role will not be assigned.</value>
+  </data>
+  <data name="SubmissionStatus.InvalidPassword" xml:space="preserve">
+    <value>The temporary password you have entered does not meet the requirements for a strong password. It may be too short or not contain a combination of letters, numbers, and/or punctuation characters or be on a list of banned passwords.</value>
+  </data>
+  <data name="SubmissionStatus.InvalidRoleEffectiveDate" xml:space="preserve">
+    <value>The effective date for the role ({0}) you have requested be assigned to the recipient upon acceptance is an invalid date. The role will be assigned with the current portal time as the effective date.</value>
+  </data>
+  <data name="SubmissionStatus.InvitationAlreadyAccepted" xml:space="preserve">
+    <value>The recipient has already accepted another invitation.</value>
+  </data>
+  <data name="SubmissionStatus.InvitationAlreadyDeclined" xml:space="preserve">
+    <value>The recipient has already declined another invitation and does not wish to receive future invitations.</value>
+  </data>
+  <data name="SubmissionStatus.InvitationAlreadyPending" xml:space="preserve">
+    <value>The recipient already has another invitation pending action.</value>
+  </data>
+  <data name="SubmissionStatus.SubmittedTooSoon" xml:space="preserve">
+    <value>Your invitation cannot be processed at this time as it is being submitted too soon after you submitted a previous invitation.</value>
+  </data>
+  <data name="SubmissionStatus.Success" xml:space="preserve">
+    <value>Your invitation has been successfully sent to the recipient.</value>
+  </data>
+  <data name="SubmissionStatus.Undefined" xml:space="preserve">
+    <value>An error has occured while processing this invitation, please try again later.</value>
+  </data>
+  <data name="SubmissionStatus.UserAlreadyRegistered" xml:space="preserve">
+    <value>The recipient is already a site user.</value>
+  </data>
+  <data name="SubmissionStatus.UsernameAlreadyExists" xml:space="preserve">
+    <value>The username has already been assigned in another pending invitation or is in use by an existing site user . Please select a different Username for this recipient.</value>
+  </data>
+  <data name="SubmissionStatus.InvalidRoleExpiryDate" xml:space="preserve">
+    <value>The expiry date for the role ({0}) you have requested be assigned to the recipient upon acceptance is an invalid date. The role will not be assigned.</value>
+  </data>
+  <data name="Success.Text" xml:space="preserve">
+    <value>Your invitation has been sent!</value>
+  </data>
+  <data name="SubmissionStatus.InvalidRedirectOnLogin" xml:space="preserve">
+    <value>The name of the site tab to which the recipient should be redirected following acceptance and first login is invalid for this site. No redirection will occur.</value>
+  </data>
+  <data name="SubmissionStatus.InvalidUsername" xml:space="preserve">
+    <value>The username you have entered does not meet the site's requirements. It may be too short or contain illegal characters  or profanity or be on a list of banned usernames.</value>
+  </data>
+  <data name="SubmissionStatus.InvalidDisplayName" xml:space="preserve">
+    <value>The display name you have entered does not meet the site's requirements. It may be too short or contain illegal characters or profanity or be on a list of banned display names.</value>
+  </data>
+  <data name="cmdReturn.Text" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="plFromDate.Text" xml:space="preserve">
+    <value>From:</value>
+  </data>
+  <data name="plThroughDate.Text" xml:space="preserve">
+    <value>Through:</value>
+  </data>
+  <data name="AssignedDisplayName.Header" xml:space="preserve">
+    <value>Display Name</value>
+  </data>
+  <data name="AssignedRoles.Header" xml:space="preserve">
+    <value>Roles Assigned</value>
+  </data>
+  <data name="AssignedUsername.Header" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="PersonalNote.Header" xml:space="preserve">
+    <value>Personal Note</value>
+  </data>
+  <data name="RecipientCultureCode.Header" xml:space="preserve">
+    <value>Culture Code</value>
+  </data>
+  <data name="RecipientEmail.Header" xml:space="preserve">
+    <value> Email</value>
+  </data>
+  <data name="RecipientFirstName.Header" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="RecipientLastName.Header" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="RedirectOnFirstLogin.Header" xml:space="preserve">
+    <value>Redirect On 1st Login</value>
+  </data>
+  <data name="TemporaryPassword.Header" xml:space="preserve">
+    <value>Temporary Password</value>
+  </data>
+  <data name="SubmissionStatus.FailureSavingInvitation" xml:space="preserve">
+    <value>A server error occurred when trying to save the invitation. </value>
+  </data>
+  <data name="Approve.Desc" xml:space="preserve">
+    <value>Approve and send the created invitation</value>
+  </data>
+  <data name="Approve.Name" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="Disapprove.Desc" xml:space="preserve">
+    <value>Disaprove the created invitation</value>
+  </data>
+  <data name="Disapprove.Name" xml:space="preserve">
+    <value>Disapprove</value>
+  </data>
+  <data name="Accepted.Body" xml:space="preserve">
+    <value>An invitation sent by [Invitation:InvitedByUserDisplayname] on [Invitation:SentOnDate] has been accepted by the recipient, [Invitation:RecipientFullname], on [Invitation:AcceptedOnDate].</value>
+  </data>
+  <data name="Accepted.Subject" xml:space="preserve">
+    <value>An Invitation From [Invitation:InvitedByUserDisplayname] Has Been Accepted By [Invitation:AssignedDisplayname]</value>
+  </data>
+  <data name="PendingModeration.Body" xml:space="preserve">
+    <value>The following invitation was created by [Invitation:InvitedByUserDisplayname] on [Invitation:InvitedOnDate] and is awaiting approval by a moderator before being sent:&lt;br /&gt;Recipient: [Invitation:RecipientFullname]&lt;br /&gt;Recipient Email: [Invitation:RecipientEmail]&lt;br /&gt;Personal Note: [Invitation:PersonalNote]&lt;br /&gt;Assigned Username: [Invitation:AssignedUsername]&lt;br /&gt;Assigned Displayname: [Invitation:AssignedDisplayname]&lt;br /&gt;Redirect On Login Page: [Invitation:RedirectTabname]&lt;br /&gt;Assigned Roles: [Invitation:AssignedRoles]
+</value>
+  </data>
+  <data name="PendingModeration.Subject" xml:space="preserve">
+    <value>An Invitation Created by [Invitation:InvitedByUserDisplayname] Requires Moderator Approval</value>
+  </data>
+  <data name="Declined.Body" xml:space="preserve">
+    <value>The invitation sent by [Invitation:InvitedByUserDisplayname] on [Invitation:SentOnDate] has been declined by the recipient:&lt;br /&gt;Recipient: [Invitation:RecipientFullname]&lt;br /&gt;Recipient Email: [Invitation:RecipientEmail]&lt;br /&gt;Declined At: [Invitation:DeclinedOnDate]&lt;br /&gt;Reason Declined: {Invitation:ReasonDeclined]</value>
+  </data>
+  <data name="Declined.Subject" xml:space="preserve">
+    <value>An Invitation Sent By [Invitation:InvitedByUserDisplayname] Has Been Declined</value>
+  </data>
+  <data name="Sent.Body" xml:space="preserve">
+    <value>The following invitation was sent by [Invitation:InvitedByUserDisplayname] on [Invitation:SentOnDate]:&lt;br /&gt;Recipient: [Invitation:RecipientFullname]&lt;br /&gt;Recipient Email: [Invitation:RecipientEmail]&lt;br /&gt;Assigned Displayname: [Invitation:AssignedDisplayname]</value>
+  </data>
+  <data name="Sent.Subject" xml:space="preserve">
+    <value>An Invitation Has Been Sent by [Invitation:InvitedByUserDisplayname] to [Invitation:RecipientFullname]</value>
+  </data>
+  <data name="Expired.Body" xml:space="preserve">
+    <value>The invitation sent by [Invitation:InvitedByUserDisplayname] on [Invitation:SentOnDate] and resent [Invitation.ResentCount] times (most recently on [Invitation:LastResentOnDate]) has neither been declined nor accepted:&lt;br /&gt;Recipient: [Invitation:RecipientFullname]&lt;br /&gt;Recipient Email: [Invitation:RecipientEmail]&lt;br /&gt;Invitation Expiration Date: [Invitation:ExpiresOnDate]&lt;br /&gt;{if ("[Configuration:AutoDeleteArchiveExpiredInvitations]" == "Delete")}The expired invitation has been deleted.{endif}{if ("[Configuration:AutoDeleteArchiveExpiredInvitations]" == "Archive")}The expired invitation has been archived.{endif}</value>
+  </data>
+  <data name="Expired.Subject" xml:space="preserve">
+    <value>A Pending Invitation Sent To [Invitation.RecipientFullname] Has Expired</value>
+  </data>
+  <data name="LockedOut.Body" xml:space="preserve">
+    <value>Following [Invitation:FailedAttempCount] failed attempts to accept the an invitation sent on [Invitation:SentOnDate] by [Invitation:InvitedByUserDisplayname], the invitee has been locked out from making further attempts until [Invitation:LockedOutUntilDate].</value>
+  </data>
+  <data name="LockedOut.Subject" xml:space="preserve">
+    <value>Invitation Recipient [Invitation:RecipientFullname] Locked Out After [Invitation:FailedAttemptCount] Failed Attempts To Accept Invitation</value>
+  </data>
+  <data name="Retracted.Body" xml:space="preserve">
+    <value>An invitation sent to [Invitation:RecipientFullname] on [Invitation:SentOnDate] was retracted on [Invitation:RetractedOnDate]:&lt;br /&gt;Invited By User: [Invitation:InvitedByUserDisplayname]&lt;br /&gt;Recipient Email: [Invitation:RecipientEmail]&lt;br /&gt;Retracted By User: [Invitation:RetractedByUserDisplayname]</value>
+  </data>
+  <data name="Retracted.Subject" xml:space="preserve">
+    <value>A Pending Invitation Sent To [Invitation:RecipientFullname] Has Been Retracted</value>
+  </data>
+  <data name="SubmissionStatus.TemporaryPasswordRequired" xml:space="preserve">
+    <value>Assignment of a temporary password is required when invitations are submitted by users who are permitted to assign credentials.</value>
+  </data>
+  <data name="Errored.Body" xml:space="preserve">
+    <value>The following error occured during the creation, sending, management, or processing of site registration invitations:&lt;br /&gt;Date and Time of Error: [DateTime:Now]&lt;br /&gt;Website: [Portal:PortalName]</value>
+  </data>
+  <data name="Errored.Subject" xml:space="preserve">
+    <value>An Invitation Processing Error Has Occured</value>
+  </data>
+  <data name="BatchAborted.Text" xml:space="preserve">
+    <value>  Batch Aborted: {0}</value>
+  </data>
+  <data name="BatchCompletionSummary.Text" xml:space="preserve">
+    <value>Batch Completion Summary:</value>
+  </data>
+  <data name="BatchNumber.Text" xml:space="preserve">
+    <value>  Batch Number: {0}</value>
+  </data>
+  <data name="Error.Text" xml:space="preserve">
+    <value>   Error: {0}</value>
+  </data>
+  <data name="ErrorCount.Text" xml:space="preserve">
+    <value>  Error Count: {0}</value>
+  </data>
+  <data name="ImportFileNotFound.Text" xml:space="preserve">
+    <value>No import file found (FileID = {0}).</value>
+  </data>
+  <data name="ImportFileOpenFailure.Text" xml:space="preserve">
+    <value>Import File '{0]' could not be opened or is empty.</value>
+  </data>
+  <data name="InvitationCreated.Text" xml:space="preserve">
+    <value>Invitation successfully created for recipient having email: {0}</value>
+  </data>
+  <data name="InvitationCreationError.Text" xml:space="preserve">
+    <value>Invitation Creation Error:</value>
+  </data>
+  <data name="MissingCSVHeader.Text" xml:space="preserve">
+    <value>Unexpected end of import file - missing CSV header row.</value>
+  </data>
+  <data name="NoImportFileSpecified.Text" xml:space="preserve">
+    <value>No import file specified.</value>
+  </data>
+  <data name="OverallCompletionSummary.Text" xml:space="preserve">
+    <value>Overall (All Batches) Completion Summary:</value>
+  </data>
+  <data name="RecordData.Text" xml:space="preserve">
+    <value>   Record Data: '{0}'</value>
+  </data>
+  <data name="RecordNumber.Text" xml:space="preserve">
+    <value>   Record #{0}:</value>
+  </data>
+  <data name="RecordsRead.Text" xml:space="preserve">
+    <value>  Records Read: {0}</value>
+  </data>
+  <data name="RecordsSkipped.Text" xml:space="preserve">
+    <value>  Records Skipped: {0}</value>
+  </data>
+  <data name="ValuesCountError.Text" xml:space="preserve">
+    <value>Values count ({0}) does not match import field count ({1}) - record skipped:</value>
+  </data>
+  <data name="SubmissionStatus.InvalidEmail" xml:space="preserve">
+    <value>The email you have entered does contain a valid pattern of characters.</value>
+  </data>
+  <data name="EditApprove.Desc" xml:space="preserve">
+    <value>Edit then approve the created invitation</value>
+  </data>
+  <data name="EditApprove.Name" xml:space="preserve">
+    <value>Edit Approve</value>
+  </data>
+  <data name="SubmissionStatus.DuplicateDisplayName" xml:space="preserve">
+    <value>The assigned DisplayName is a duplicate of the recipient of another invitation or already registered site user in a site requiring that DisplayNames be unique.</value>
+  </data>
+  <data name="SubmissionStatus.InvalidRole" xml:space="preserve">
+    <value>A server error occurred when attempting to pre-assign a role to the recipient of the invitation.</value>
+  </data>
+  <data name="Approved,Subject" xml:space="preserve">
+    <value>A Moderated Invitation From [Invitation:InvitedByUserDisplayName] Has Been Approved</value>
+  </data>
+  <data name="Approved.Body" xml:space="preserve">
+    <value>The following moderated invitation was approved on [Invitation:ApprovedOnDate] and will shortly be sent to the recipient:&lt;br /&gt;InvitedBy: [Invitation:InvitedByUserDisplayName]&lt;br /&gt;Recipient: [Invitation:RecipientFullname]&lt;br /&gt;Recipient Email: [Invitation:RecipientEmail]&lt;br /&gt;Recipient Display Name: [Invitation:AssignedDisplayname]</value>
+  </data>
+  <data name="Disapproved.Body" xml:space="preserve">
+    <value>The following moderated invitation was disapproved on [Invitation:DisapprovedOnDate] and will not be sent to the recipient:&lt;br /&gt;InvitedBy: [Invitation:InvitedByUserDisplayName]&lt;br /&gt;Recipient: [Invitation:RecipientFullname]&lt;br /&gt;Recipient Email: [Invitation:RecipientEmail]&lt;br /&gt;Recipient Display Name: [Invitation:AssignedDisplayname]</value>
+  </data>
+  <data name="Disapproved.Subject" xml:space="preserve">
+    <value>A Moderated Invitation From [Invitation:InvitedByUserDisplayName] Has Been Disapproved</value>
+  </data>
+  <data name="InvitationsCreated.Text" xml:space="preserve">
+    <value>  Invitations Created: {0}</value>
+  </data>
+  <data name="SubmissionStatus.RequiredFieldDataMissing" xml:space="preserve">
+    <value>Data is missing for a required invitation field during a bulk import.</value>
+  </data>
+  <data name="Resent.Body" xml:space="preserve">
+    <value>An invitation originally created by [Invitation:InvitedByUserDisplayname] on [Invitation:CreatedOnDate] was resent to the recipient:&lt;br /&gt;Recipient Full Name: [Invitation:RecipientFullname]&lt;br /&gt;Recipient Email: [Invitation:RecipientEmail]&lt;br /&gt;Resent On: [Invitation:LastResentOnDate]&lt;br /&gt;Resent Count: [Invitation:ResentCount]&lt;br /&gt;Expires On: [Invitation:ExpiresOnDate]</value>
+  </data>
+  <data name="Resent.Subject" xml:space="preserve">
+    <value>Invitation Resent by [Invitation:InvitedByUserDisplayname] to [Invitation:RecipientFullname]</value>
+  </data>
+  <data name="Created.Body" xml:space="preserve">
+    <value>The following invitation was created by [Invitation:InvitedByUserDisplayname] on [Invitation:InvitedOnDate]:&lt;br /&gt;Recipient: [Invitation:RecipientFullname]&lt;br /&gt;Recipient Email: [Invitation:RecipientEmail]&lt;br /&gt;Personal Note: [Invitation:PersonalNote]&lt;br /&gt;Assigned Username: [Invitation:AssignedUsername]&lt;br /&gt;Assigned Displayname: [Invitation:AssignedDisplayname]&lt;br /&gt;Redirect On Login Page: [Invitation:RedirectTabname]&lt;br /&gt;Assigned Roles: [Invitation:AssignedRoles]</value>
+  </data>
+  <data name="EffectiveDate.Text" xml:space="preserve">
+    <value>Effective: {0:d}</value>
+  </data>
+  <data name="ExpiryDate.Text" xml:space="preserve">
+    <value>Expires: {0:d}</value>
+  </data>
+  <data name="Created.Subject" xml:space="preserve">
+    <value>[Invitation:InvitedByUserDisplayname] Has Invited [Invitation:RecipientFullname] to Register for Site Membership</value>
+  </data>
+  <data name="NotificationsSent.Text" xml:space="preserve">
+    <value>  Notifications Sent: {0}</value>
+  </data>
+  <data name="FileUploadError.Text" xml:space="preserve">
+    <value>Import file upload failed with error: </value>
+  </data>
+  <data name="FileUploadStreamError.Text" xml:space="preserve">
+    <value>Import file upload stream is empty or closed or no filename was provided.</value>
+  </data>
+  <data name="Finished.Body" xml:space="preserve">
+    <value>The bulk import of invitations started by [BulkImport:ImportedByUserDisplayname] on [BulkImport:ImportedOnDate] has finished on [BulkImport:FinishedOnDate]. Detailed results follow:&lt;br /&gt;Read Started: [BulkImport:ReadStartedOnDate]&lt;br /&gt;Read Finished: [BulkImport:ReadFinishedOnDate]&lt;br /&gt;Records Read: [BulkImport:RecordsRead]&lt;br /&gt;Records Skipped: [BulkImport:RecordsSkipped]&lt;br /&gt;Invitations Created: [BulkImport:InvitationsCreated]&lt;br /&gt;Send Started: [BulkImport:SendStartedOnDate]&lt;br /&gt;Send Finished: [BulkImport:SendFinishedOnDate]&lt;br /&gt;Invitations Sent: [BulkImport:InvitationsSent]&lt;br /&gt;ErrorCount: [BulkImport:ErrorCount]&lt;br /&gt;AbortedOnDate: [BulkImport:AbortedOnDate]&lt;br /&gt;CanceledOnDate: [BulkImport:CanceledOnDate]&lt;br /&gt;FinishedOnDate: [BulkImport:FinishedOnDate]&lt;br /&gt;{if ([BulkImport:ErrorCount] &gt; 0 || "[BulkImport:AbortedOnDate]" != "---")}Bulk Import Log: &lt;br /&gt;[BulkImport:BulkImportLog]{endif}
+</value>
+  </data>
+  <data name="Finished.Subject" xml:space="preserve">
+    <value>A Bulk Import of Invitations Has Finished</value>
+  </data>
+  <data name="Disapprove.Confirm" xml:space="preserve">
+    <value>Are you sure you want to disapprove this invitation?</value>
+  </data>
+  <data name="Approve.Confirm" xml:space="preserve">
+    <value>Are you sure you wish to approve and send this invitation?</value>
+  </data>
+  <data name="Anonymous.Text" xml:space="preserve">
+    <value>Anonymous</value>
+  </data>
+</root>

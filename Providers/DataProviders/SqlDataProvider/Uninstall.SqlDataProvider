@@ -1,0 +1,312 @@
+﻿/*********************************************************************************************/
+/******                                                                                 ******/
+/******              Uninstall Script for WESNet_ByInvitation v 1.00.00                 ******/
+/******                                                                                 ******/
+/******         NOTE: When executing this script manually you must first replace the    ******/
+/******               {databaseOwner} and {objectQualifier} tokens with values          ******/
+/******               defined in the <data defaultProvider="SqlDataProvider"> section   ******/
+/******               of your website's web.config file.                                ******/
+/******                                                                                 ******/
+/*********************************************************************************************/
+
+/****** Uninstall the By Invitation Notification Scheduler Client Task ******/
+DELETE FROM {databaseOwner}{objectQualifier}Schedule
+WHERE 
+    TypeFullName = 'WESNet.DNN.Modules.ByInvitation.NotificationScheduler, WESNet.DNN.Modules.ByInvitation'
+GO
+
+/****** Object:  ForeignKey [FK_{objectQualifier}WESNet_ByInvitation_AssignableRoles_Invitations] ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}[FK_{objectQualifier}WESNet_ByInvitation_AssignableRoles_Invitations]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_AssignableRoles]'))
+ALTER TABLE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_AssignableRoles] DROP CONSTRAINT [FK_{objectQualifier}WESNet_ByInvitation_AssignableRoles_Invitations]
+GO
+
+/****** Object:  Table {databaseOwner}[{objectQualifier}WESNet_ByInvitation_AssignableRoles] ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}[FK_{objectQualifier}WESNet_ByInvitation_AssignableRoles_Invitations]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_AssignableRoles]'))
+ALTER TABLE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_AssignableRoles] DROP CONSTRAINT [FK_{objectQualifier}WESNet_ByInvitation_AssignableRoles_Invitations]
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_AssignableRoles]') AND type in (N'U'))
+DROP TABLE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_AssignableRoles]
+GO
+
+/****** Object:  Table {databaseOwner}[{objectQualifier}WESNet_ByInvitation_Configurations] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_{objectQualifier}WESNet_ByInvitation_Configurations_TemporaryPasswordMode]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_Configurations] DROP CONSTRAINT [DF_{objectQualifier}WESNet_ByInvitation_Configurations_TemporaryPasswordMode]
+END
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_{objectQualifier}WESNet_ByInvitation_Configurations_AllowUsernameModification]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_Configurations] DROP CONSTRAINT [DF_{objectQualifier}WESNet_ByInvitation_Configurations_AllowUsernameModification]
+END
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_{objectQualifier}WESNet_ByInvitation_Configurations_AllowFirstLastNameModification]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_Configurations] DROP CONSTRAINT [DF_{objectQualifier}WESNet_ByInvitation_Configurations_AllowFirstLastNameModification]
+END
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_{objectQualifier}WESNet_ByInvitation_Configurations_AllowDisplayNameModification]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_Configurations] DROP CONSTRAINT [DF_{objectQualifier}WESNet_ByInvitation_Configurations_AllowDisplayNameModification]
+END
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_{objectQualifier}WESNet_ByInvitation_Configurations_RequireTemporaryPasswordEntry]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_Configurations] DROP CONSTRAINT [DF_{objectQualifier}WESNet_ByInvitation_Configurations_RequireTemporaryPasswordEntry]
+END
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_{objectQualifier}WESNet_ByInvitation_Configurations_RequirePasswordChangeOnAcceptance]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_Configurations] DROP CONSTRAINT [DF_{objectQualifier}WESNet_ByInvitation_Configurations_RequirePasswordChangeOnAcceptance]
+END
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_{objectQualifier}WESNet_ByInvitation_Configurations_RequirePasswordConfirmOnChange]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_Configurations] DROP CONSTRAINT [DF_{objectQualifier}WESNet_ByInvitation_Configurations_RequirePasswordConfirmOnChange]
+END
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_{objectQualifier}WESNet_ByInvitation_Configurations_EnableReasonDeclinedField]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_Configurations] DROP CONSTRAINT [DF_{objectQualifier}WESNet_ByInvitation_Configurations_EnableReasonDeclinedField]
+END
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_{objectQualifier}WESNet_ByInvitation_Configurations_SuspendInvitationProcessing]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_Configurations] DROP CONSTRAINT [DF_{objectQualifier}WESNet_ByInvitation_Configurations_SuspendInvitationProcessing]
+END
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_Configurations]') AND type in (N'U'))
+DROP TABLE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_Configurations]
+GO
+
+/****** Object:  Table {databaseOwner}[{objectQualifier}WESNet_ByInvitation_Invitations] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_{objectQualifier}WESNet_ByInvitation_Invitations_FailedAttemptCount]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_Invitations] DROP CONSTRAINT [DF_{objectQualifier}WESNet_ByInvitation_Invitations_FailedAttemptCount]
+END
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_{objectQualifier}WESNet_ByInvitation_Invitations_IsArchived]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_Invitations] DROP CONSTRAINT [DF_{objectQualifier}WESNet_ByInvitation_Invitations_IsArchived]
+END
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_Invitations]') AND type in (N'U'))
+DROP TABLE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_Invitations]
+GO
+
+/****** Object:  Table {databaseOwner}[{objectQualifier}WESNet_ByInvitation_LocalizedConfigurations] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_LocalizedConfigurations]') AND type in (N'U'))
+DROP TABLE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_LocalizedConfigurations]
+GO
+
+/****** Object:  Table {databaseOwner}[{objectQualifier}WESNet_ByInvitation_RoleBasedLimits] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_RoleBasedLimits]') AND type in (N'U'))
+DROP TABLE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_RoleBasedLimits]
+GO
+
+/****** Object:  Table [dbo].[DNN_WESNet_ByInvitation_BulkImports]    Script Date: 2/16/2015 10:37:07 PM ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_BulkImports]') AND type in (N'U'))
+DROP TABLE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_BulkImports]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetAssignableRole] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetAssignableRole]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetAssignableRole]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetAssignableRolesByInvitation] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetAssignableRolesByInvitation]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetAssignableRolesByInvitation]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitation]  ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitation]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitation]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByAssignedUsername] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByAssignedUsername]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByAssignedUsername]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByPortalAndRSVPCode] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByPortalAndRSVPCode]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByPortalAndRSVPCode]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByRecipientEmail] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByRecipientEmail]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByRecipientEmail]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationsByInvitingUser] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationsByInvitingUser]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationsByInvitingUser]
+GO
+
+/****** Object:  StoredProcedure [dbo].[DNN_WESNet_ByInvitation_GetInvitingUserStats]  ******/
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitingUserStats]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitingUserStats]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationsByInvitingUserEmail] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationsByInvitingUserEmail]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationsByInvitingUserEmail]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitations]  ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitations]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitations]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationsByInvitingUserIPAddr] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationsByInvitingUserIPAddr]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationsByInvitingUserIPAddr]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetRoleBasedLimits] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetRoleBasedLimits]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetRoleBasedLimits]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetRoleBasedLimitsCollection]  ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetRoleBasedLimitsCollection]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetRoleBasedLimitsCollection]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateAssignableRole] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateAssignableRole]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateAssignableRole]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteAssignableRole] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteAssignableRole]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteAssignableRole]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteInvitation] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteInvitation]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteInvitation]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteInvitations] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteInvitations]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteInvitations]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteLocalizedConfiguration] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteLocalizedConfiguration]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteLocalizedConfiguration]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteRoleBasedLimits] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteRoleBasedLimits]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteRoleBasedLimits]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_ExtendInvitationExpiration] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_ExtendInvitationExpiration]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_ExtendInvitationExpiration]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetConfiguration] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetConfiguration]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetConfiguration]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteAcceptedOrExpiredInvitations] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteAcceptedOrExpiredInvitations]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteAcceptedOrExpiredInvitations]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitingUsers] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitingUsers]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitingUsers]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetLocalizedConfiguration] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetLocalizedConfiguration]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetLocalizedConfiguration]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetLocalizedConfigurationByPortalAndCulture] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetLocalizedConfigurationByPortalAndCulture]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetLocalizedConfigurationByPortalAndCulture]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetLocalizedConfigurations] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetLocalizedConfigurations]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetLocalizedConfigurations]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationCount] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationCount]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationCount]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateConfiguration] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateConfiguration]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateConfiguration]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateInvitation] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateInvitation]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateInvitation]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateInvitationStatus] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateInvitationStatus]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateInvitationStatus]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateLocalizedConfiguration] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateLocalizedConfiguration]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateLocalizedConfiguration]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateRoleBasedLimits] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateRoleBasedLimits]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateRoleBasedLimits]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_SaveBulkImport]  ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_SaveBulkImport]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_SaveBulkImport]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateBulkImportStatus]  ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateBulkImportStatus]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateBulkImportStatus]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetBulkImport]   ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetBulkImport]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetBulkImport]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetBulkImports] ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetBulkImports]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetBulkImports]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetBulkImportedInvitationsNotSent]  ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetBulkImportedInvitationsNotSent]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetBulkImportedInvitationsNotSent]
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteBulkImports]  ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteBulkImports]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_DeleteBulkImports]
+GO
+

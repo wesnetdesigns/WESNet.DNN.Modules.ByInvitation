@@ -1,0 +1,182 @@
+﻿<dotnetnuke type="Package" version="6.0">
+    <packages>
+        <package name="WESNet_ByInvitation" type="Module" version="01.00.00.02">
+            <friendlyName>By Invitation</friendlyName>
+            <description>Invite your friends, family and co-workers to register as a user on this site via an automatic email which will contain a link with a one-time RSVP code that when clicked will create their account, apply selected security roles, log them in and then redirect the new user to a selected site page.</description>
+            <iconFile>DesktopModules/WESNet_ByInvitation/images/ByInvitation.png</iconFile>
+            <owner>
+                <name>William Severance</name>
+                <organization>WESNet Designs</organization>
+                <url>http://www.wesnetdesigns.com</url>
+                <email>bill@wesnetdesigns.com</email>
+            </owner>
+            <license src="Documentation\License.htm"/>
+            <releaseNotes src="Documentation\WESNet.DNN.Modules.ByInvitation_01.00.00_ReleaseNotes.htm" />
+            <dependencies>
+                <dependency type="CoreVersion">07.03.03</dependency>
+              <dependency type="type">System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry</dependency>
+            </dependencies>
+            <components>
+                <component type="Script">
+                    <scripts>
+                        <basePath>DesktopModules\WESNet_ByInvitation</basePath>
+                        <script type="Install">
+                            <path>Providers\DataProviders\SqlDataProvider</path>
+                            <name>01.00.00.SqlDataProvider</name>
+                            <version>01.00.00</version>
+                        </script>
+                        <script type="Uninstall">
+                            <path>Providers\DataProviders\SqlDataProvider</path>
+                            <name>Uninstall.SqlDataProvider</name>
+                        </script>
+                    </scripts>
+                </component>
+                <component type="Module">
+                    <desktopModule>
+                        <moduleName>WESNet_ByInvitation</moduleName>
+                        <foldername>WESNet_ByInvitation</foldername>
+                        <businessControllerClass>WESNet.DNN.Modules.ByInvitation.InvitationController</businessControllerClass>
+                        <supportedFeatures>
+                            <supportedFeature type="Upgradeable" />
+                        </supportedFeatures>
+                        <moduleDefinitions>
+                            <moduleDefinition>
+                                <friendlyName>By Invitation</friendlyName>
+                                <defaultCacheTime>0</defaultCacheTime>
+                                <moduleControls>
+                                    <moduleControl>
+                                        <controlKey />
+                                        <controlSrc>DesktopModules/WESNet_ByInvitation/SendInvitation.ascx</controlSrc>
+                                        <supportsPartialRendering>False</supportsPartialRendering>
+                                        <controlTitle />
+                                        <controlType>View</controlType>
+                                        <iconFile />
+                                        <helpUrl />
+                                        <supportsPopUps>False</supportsPopUps>
+                                        <viewOrder>0</viewOrder>
+                                    </moduleControl>
+                                    <moduleControl>
+                                        <controlKey>bulkimport</controlKey>
+                                        <controlSrc>DesktopModules/WESNet_ByInvitation/BulkImportInvitations.ascx</controlSrc>
+                                        <supportsPartialRendering>False</supportsPartialRendering>
+                                        <controlTitle>Bulk Import Invitations</controlTitle>
+                                        <controlType>Admin</controlType>
+                                        <iconFile />
+                                        <helpUrl />
+                                        <supportsPopUps>True</supportsPopUps>
+                                    </moduleControl>
+                                    <moduleControl>
+                                        <controlKey>manage</controlKey>
+                                        <controlSrc>DesktopModules/WESNet_ByInvitation/ManageInvitations.ascx</controlSrc>
+                                        <supportsPartialRendering>False</supportsPartialRendering>
+                                        <controlTitle>Manage Invitations</controlTitle>
+                                        <controlType>View</controlType>
+                                        <iconFile />
+                                        <helpUrl />
+                                        <supportsPopUps>True</supportsPopUps>
+                                    </moduleControl>
+                                    <moduleControl>
+                                        <controlKey>settings</controlKey>
+                                        <controlSrc>DesktopModules/WESNet_ByInvitation/Settings.ascx</controlSrc>
+                                        <supportsPartialRendering>False</supportsPartialRendering>
+                                        <controlTitle>By Invitation Configuration</controlTitle>
+                                        <controlType>Admin</controlType>
+                                        <iconFile />
+                                        <helpUrl />
+                                        <supportsPopUps>True</supportsPopUps>
+                                    </moduleControl>
+                                </moduleControls>
+                                <permissions>                               
+                                    <permission code="WESNET_BYINVITATION" key="CREDENTIAL" name="Assign Credentials" />
+                                    <permission code="WESNET_BYINVITATION" key="REDIRECT" name="Assign Redirects" />
+                                    <permission code="WESNET_BYINVITATION" key="MANAGE" name="Manage Invitations" />
+                                    <permission code="WESNET_BYINVITATION" key="RETRACT" name="Retract Invitations" />
+                                    <permission code="WESNET_BYINVITATION" key="EXTEND" name ="Extend Invitations" />
+                                    <permission code="WESNET_BYINVITATION" key="MODERATE" name ="Moderate Invitations" />
+                                    <permission code="WESNET_BYINVITATION" key="BULKIMPORT" name="Bulk Import Invitations" />
+                                </permissions>
+                            </moduleDefinition>
+                        </moduleDefinitions>
+                    </desktopModule>
+                    <eventMessage>
+                        <processorType>DotNetNuke.Entities.Modules.EventMessageProcessor, DotNetNuke</processorType>
+                        <processorCommand>UpgradeModule</processorCommand>
+                        <attributes>
+                            <businessControllerClass>WESNet.DNN.Modules.ByInvitation.InvitationController</businessControllerClass>
+                            <desktopModuleID>[DESKTOPMODULEID]</desktopModuleID>
+                            <upgradeVersionsList>01.00.00</upgradeVersionsList>
+                        </attributes>
+                    </eventMessage>
+                </component>
+                <component type="Assembly">
+                    <assemblies>
+                        <basePath>bin</basePath>
+                        <assembly>
+                            <name>WESNet.DNN.Modules.ByInvitation.dll</name>
+                        </assembly>
+                        <assembly>
+                            <name>WESNet.Utilities.ExpressionEvaluator.dll</name>
+                        </assembly>
+                        <assembly>
+                            <name>Excel.dll</name>
+                        </assembly>
+                    </assemblies>
+                </component>
+                <component type="ResourceFile">
+                    <resourceFiles>
+                        <basePath>DesktopModules/WESNet_ByInvitation</basePath>
+                        <resourceFile>
+                            <name>Resources.zip</name>
+                        </resourceFile>
+                    </resourceFiles>
+                </component>
+                <component type="Cleanup" version="01.00.00" fileName="01.00.00.txt" />
+            </components>
+        </package>
+        <package name="WESNet_ByInvitation_Processor" type="Module" version="01.00.00.02">
+            <friendlyName>By Invitation Processor</friendlyName>
+            <description>Invitation processing module for WESNet_ByInvitation.</description>
+            <iconFile>DesktopModules/WESNet_ByInvitation/images/ByInvitation.png</iconFile>
+            <owner>
+                <name>William Severance</name>
+                <organization>WESNet Designs</organization>
+                <url>http://www.wesnetdesigns.com</url>
+                <email>bill@wesnetdesigns.com</email>
+            </owner>
+            <license src="Documentation\License.htm"/>
+            <releaseNotes src="Documentation\WESNet.DNN.Modules.ByInvitation_01.00.00_ReleaseNotes.htm" />
+            <dependencies>
+                <dependency type="CoreVersion">07.03.03</dependency>
+            </dependencies>
+            <components>
+                <component type="Module">
+                    <desktopModule>
+                        <moduleName>WESNet_ByInvitation_Processor</moduleName>
+                        <foldername>WESNet_ByInvitation</foldername>
+                        <businessControllerClass />
+                        <supportedFeatures />
+                        <moduleDefinitions>
+                            <moduleDefinition>
+                                <friendlyName>By Invitation Processor</friendlyName>
+                                <defaultCacheTime>0</defaultCacheTime>
+                                <moduleControls>
+                                    <moduleControl>
+                                        <controlKey />
+                                        <controlSrc>DesktopModules/WESNet_ByInvitation/ProcessInvitation.ascx</controlSrc>
+                                        <supportsPartialRendering>False</supportsPartialRendering>
+                                        <controlTitle />
+                                        <controlType>View</controlType>
+                                        <iconFile />
+                                        <helpUrl />
+                                        <supportsPopUps>False</supportsPopUps>
+                                        <viewOrder>0</viewOrder>
+                                    </moduleControl>
+                                </moduleControls>
+                            </moduleDefinition>
+                        </moduleDefinitions>
+                    </desktopModule>
+                </component>
+            </components>
+        </package>   
+    </packages>
+</dotnetnuke>

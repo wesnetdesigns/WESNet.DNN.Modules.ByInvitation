@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AllUsers.Text" xml:space="preserve">
+    <value>All Users</value>
+  </data>
+  <data name="AnonymousUsersOnly.Text" xml:space="preserve">
+    <value>Anonymous Users Only</value>
+  </data>
+  <data name="btnDefaultEmailRegex.Text" xml:space="preserve">
+    <value>Load Default</value>
+  </data>
+  <data name="cmdAddCulture.Text" xml:space="preserve">
+    <value>Add Culture</value>
+  </data>
+  <data name="FormSettings.Text" xml:space="preserve">
+    <value>Invitation Form Settings</value>
+  </data>
+  <data name="GeneralSettings.Text" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="LocalizedSettings.Text" xml:space="preserve">
+    <value>Localized Settings</value>
+  </data>
+  <data name="NoCaptcha.Text" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="NoFiltering.Text" xml:space="preserve">
+    <value>No Submission Filtering</value>
+  </data>
+  <data name="plAutoGenerateTemporaryPassword.Text" xml:space="preserve">
+    <value>Auto-Generate Temporary Password</value>
+  </data>
+  <data name="plAutoGenerateTemporaryPassword.Help" xml:space="preserve">
+    <value>When the inviting user has sufficient permission to pre-assign the recipient's login credentials and temporary password creation has been enabled above, they may alternatively select that the temporary password will be automatically generated as a series of random characters.</value>
+  </data>
+  <data name="plCaptchaBackgroundNoise.Help" xml:space="preserve">
+    <value>Enter the level of "noise" that will be added to the Captcha background making it more or less difficult to read the Captcha characters</value>
+  </data>
+  <data name="plCaptchaBackgroundNoise.Text" xml:space="preserve">
+    <value>Captcha Background Noise</value>
+  </data>
+  <data name="plCaptchaIsCaseInsensitive.Help" xml:space="preserve">
+    <value>By default, the Captcha characters displayed are case sensitive and require the case of the code entered by the keyboard to match. Checking this option makes the characters case insensitive.</value>
+  </data>
+  <data name="plCaptchaIsCaseInsensitive.Text" xml:space="preserve">
+    <value>Captcha Is Case Insensitive</value>
+  </data>
+  <data name="plCaptchaLineNoise.Help" xml:space="preserve">
+    <value>Enter the level of "noise" that will be added to the Captcha text making it more or less difficult to read.</value>
+  </data>
+  <data name="plCaptchaLineNoise.Text" xml:space="preserve">
+    <value>Captcha Line Noise</value>
+  </data>
+  <data name="plEnableInvitationCaptcha.Help" xml:space="preserve">
+    <value>To help elimate invitations being sent by non-human spam bots, a Captcha test may be required. Enter which inviting users will be required to successfully enter the Captcha code when submitting the invitation form.</value>
+  </data>
+  <data name="plEnableInvitationCaptcha.Text" xml:space="preserve">
+    <value>Enable Invitation Captcha</value>
+  </data>
+  <data name="plCultureCode.Help" xml:space="preserve">
+    <value>The culture code (i.e. en-US) of these localized configuration settings. To add a new localization, enter its culture code in the box and click 'Add Culture'.</value>
+  </data>
+  <data name="plCultureCode.Text" xml:space="preserve">
+    <value>Culture Code</value>
+  </data>
+  <data name="plEmailRegex.Help" xml:space="preserve">
+    <value>Since valid email address formats can vary from country to country, you may customize the culture specific regular expression used to validate email address entries. If this field is not defined the site's email validation expression will be used. You may also revert to the site's email validation epression by clicking the Default Email Validation Expression button.</value>
+  </data>
+  <data name="plEmailRegex.Text" xml:space="preserve">
+    <value>Email Address Validation Expression</value>
+  </data>
+  <data name="plEnableCaptchaAudio.Help" xml:space="preserve">
+    <value>When checked the user may click a link to have the Captcha code spoken character by character.</value>
+  </data>
+  <data name="plEnableCaptchaAudio.Text" xml:space="preserve">
+    <value>Enable Captcha Audio</value>
+  </data>
+  <data name="plEnablePersonalNote.Help" xml:space="preserve">
+    <value>When checked the inviting user will be given the option of entering a personal note that will appear in the invitation emailed to the recipient.</value>
+  </data>
+  <data name="plEnablePersonalNote.Text" xml:space="preserve">
+    <value>Enable Personal Note</value>
+  </data>
+  <data name="plTemporaryPasswordMode.Help" xml:space="preserve">
+    <value>If the inviting user has sufficient permission to pre-assign the recipients Username and Display Name, they may assign a temporary password (required or optional) for the recipient's user account or an automatically generated password will be assigned.</value>
+  </data>
+  <data name="plTemporaryPasswordMode.Text" xml:space="preserve">
+    <value>Temporary Password Creation</value>
+  </data>
+  <data name="plInvitationBody.Help" xml:space="preserve">
+    <value>This rich text will be the message in the email sent to the invitation recipient. You should customize the body contents by adding tokens such as [Invitation:RecipientFirstName] which will automatically be replaced by the recipient's first name.</value>
+  </data>
+  <data name="plInvitationBody.Text" xml:space="preserve">
+    <value>Invitation Email Body</value>
+  </data>
+  <data name="plInvitationFiltering.Help" xml:space="preserve">
+    <value>To help prevent a user from submitting multiple invitations over a short period of time you can select one of the following ways to limit the frequency of submissions over the specified Submission Filtering Interval</value>
+  </data>
+  <data name="plInvitationFiltering.Text" xml:space="preserve">
+    <value>Invitation Submission Filtering</value>
+  </data>
+  <data name="plInvitationFilteringInterval.Help" xml:space="preserve">
+    <value>Enter the time the user must wait between submitting multiple invitations.</value>
+  </data>
+  <data name="plInvitationFilteringInterval.Text" xml:space="preserve">
+    <value>Invitation Submission Interval</value>
+  </data>
+  <data name="plInvitationSubject.Help" xml:space="preserve">
+    <value>This text will be shown in the subject line of the email sent to the invitation recipient.</value>
+  </data>
+  <data name="plInvitationSubject.Text" xml:space="preserve">
+    <value>Invitation Email Subject</value>
+  </data>
+  <data name="plMaxResends.Help" xml:space="preserve">
+    <value>Enter an integer here to set the maximum number of times an invitation that is still pending will be automatically or can manually be be resent to the recipient. A value of 0 indicates that invitations will never be resent.</value>
+  </data>
+  <data name="plMaxResends.Text" xml:space="preserve">
+    <value>Maximum Resends</value>
+  </data>
+  <data name="plRequireRecipientEmailConfirm.Help" xml:space="preserve">
+    <value>When checked an additional box in which the recipient's email address must be entered will be displayed as a confirmation that the address was correctly entered.</value>
+  </data>
+  <data name="plRequireRecipientEmailConfirm.Text" xml:space="preserve">
+    <value>Require Recipient Email Confirm</value>
+  </data>
+  <data name="plRequireTemporaryPasswordConfirm.Help" xml:space="preserve">
+    <value>Checking this option will require the inviting user to re-enter the recipient's temporary password a second time as confirmation.</value>
+  </data>
+  <data name="plRequireTemporaryPasswordConfirm.Text" xml:space="preserve">
+    <value>Require Temporary Password Confirm</value>
+  </data>
+  <data name="plResendInterval.Help" xml:space="preserve">
+    <value>This sets the period of time that will elapse between attempts to resend the invitations that are still pending and have not yet expired.</value>
+  </data>
+  <data name="plResendInterval.Text" xml:space="preserve">
+    <value>Resend Interval</value>
+  </data>
+  <data name="plRoleBasedLimits.Help" xml:space="preserve">
+    <value>In this section you define limits placed on an inviting user's security roles which may be used to limit the number of invitations a user in such a role may submit, and what roles may be assigned to an invited user when the invitation is accepted.</value>
+  </data>
+  <data name="plRoleBasedLimits.Text" xml:space="preserve">
+    <value>Role Based Limits</value>
+  </data>
+  <data name="plSendCopiesTo.Help" xml:space="preserve">
+    <value>If desired, a copy of the initial invitation email will be sent to each email address entered here. Separate multiple email addresses by semi-colons.</value>
+  </data>
+  <data name="plSendCopiesTo.Text" xml:space="preserve">
+    <value>Send Email Copies To</value>
+  </data>
+  <data name="plSendCopiesToRoles.Help" xml:space="preserve">
+    <value>You may also select one or more roles whose assigned users will also receive an emailed copy of the initial invitation.</value>
+  </data>
+  <data name="plSendCopiesToRoles.Text" xml:space="preserve">
+    <value>Send Email Copy To Roles</value>
+  </data>
+  <data name="plSendFrom.Help" xml:space="preserve">
+    <value>The email address from which invitations and status notifications will be sent. If no value is entered, the site's administrator email address will be used. </value>
+  </data>
+  <data name="plSendFrom.Text" xml:space="preserve">
+    <value>Send From Email Address</value>
+  </data>
+  <data name="plSendInvitationButtonImage.Help" xml:space="preserve">
+    <value>Alternatively you may select or upload an image which will be displayed on the Create Invitation button.</value>
+  </data>
+  <data name="plSendInvitationButtonImage.Text" xml:space="preserve">
+    <value>Create Invitation Button Image</value>
+  </data>
+  <data name="plSendInvitationButtonText.Help" xml:space="preserve">
+    <value>This is the text displayed on the "Create An Invitation Now" button when the control is in view mode awaiting for a new invitation to be created.</value>
+  </data>
+  <data name="plSendInvitationButtonText.Text" xml:space="preserve">
+    <value>Create Invitation Button Text</value>
+  </data>
+  <data name="plSendInvitationHtml.Help" xml:space="preserve">
+    <value>This is the rich text markup which will be displayed to the user when the control is in view mode, awaiting entry of a new invitation.</value>
+  </data>
+  <data name="plSendInvitationHtml.Text" xml:space="preserve">
+    <value>View Control Markup HTML</value>
+  </data>
+  <data name="plValidityPeriod.Help" xml:space="preserve">
+    <value>Select the lenght of time for which the invitation will remain open before expiration. Invitation recipients will not be able to accept an invitation after the validity period is over.</value>
+  </data>
+  <data name="plValidityPeriod.Text" xml:space="preserve">
+    <value>Invitation Validity Period</value>
+  </data>
+  <data name="RoleBasedLimits.Text" xml:space="preserve">
+    <value>Role Based Limits</value>
+  </data>
+  <data name="SenderEmail.Text" xml:space="preserve">
+    <value>Inviting User's Email Address</value>
+  </data>
+  <data name="SenderIPAddr.Text" xml:space="preserve">
+    <value>Inviting User's IP Address</value>
+  </data>
+  <data name="SenderUserID.Text" xml:space="preserve">
+    <value>Inviting User's Website UserID</value>
+  </data>
+  <data name="SecuritySettings.Text" xml:space="preserve">
+    <value>Security Settings</value>
+  </data>
+  <data name="plRequirePasswordChangeOnAcceptance.Help" xml:space="preserve">
+    <value>Check this box to require that the recipient of the invitation change his temporary password on acceptance.</value>
+  </data>
+  <data name="plRequirePasswordChangeOnAcceptance.Text" xml:space="preserve">
+    <value>Require Password Change On Acceptance</value>
+  </data>
+  <data name="Extreme.Text" xml:space="preserve">
+    <value>Extreme</value>
+  </data>
+  <data name="High.Text" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="Low.Text" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="Medium.Text" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="None.Text" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="AutoGenerateTemporaryPassword.Text" xml:space="preserve">
+    <value>Auto Generate A Temporary Password</value>
+  </data>
+  <data name="NoTemporaryPassword.Text" xml:space="preserve">
+    <value>No Temporary Password Will Be Assigned</value>
+  </data>
+  <data name="OptionalTemporaryPassword.Text" xml:space="preserve">
+    <value>Temporary Password May Optionally Be Assigned</value>
+  </data>
+  <data name="RequiredTemporaryPassword.Text" xml:space="preserve">
+    <value>Temporary Password Required To Be Assigned</value>
+  </data>
+  <data name="plImageButtonSize.Help" xml:space="preserve">
+    <value>When an image is selected for the background of the Send Invitation Button, you must specify a size for the button if the selected image is not already sized appropriately. Enter the pixel  width and height as integer values.</value>
+  </data>
+  <data name="plImageButtonSize.Text" xml:space="preserve">
+    <value>Image Button Size</value>
+  </data>
+  <data name="Created.Text" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="Declined.Text" xml:space="preserve">
+    <value>Declined</value>
+  </data>
+  <data name="Expired.Text" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="Pending.Text" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="NotificationSettings.Text" xml:space="preserve">
+    <value>Notification Settings</value>
+  </data>
+  <data name="plAllowDisplayNameModification.Help" xml:space="preserve">
+    <value>When checked the recipient is allowed to change his assigned Display Name at the time of acceptance. This option will not be available if the portal enforces a Display Name format.</value>
+  </data>
+  <data name="plAllowFirstLastNameModification.Help" xml:space="preserve">
+    <value>When checked the recipient is allowed to change his assigned First Name and/or Last Name at the time of acceptance.</value>
+  </data>
+  <data name="plAllowFirstLastNameModification.Text" xml:space="preserve">
+    <value>Allow First/Last Name Modification</value>
+  </data>
+  <data name="plAllowUsernameModification.Help" xml:space="preserve">
+    <value>When checked the recipient is allowed to change his assigned Username at the time of accepting the invitation.</value>
+  </data>
+  <data name="plAllowUsernameModification.Text" xml:space="preserve">
+    <value>Allow Username Modification</value>
+  </data>
+  <data name="plEnableReasonDeclinedField.Help" xml:space="preserve">
+    <value>When checked the recipient who is declining an invitation may optionally enter the reason for declining the invitation.</value>
+  </data>
+  <data name="plEnableReasonDeclinedField.Text" xml:space="preserve">
+    <value>Enable Reason Declined Field</value>
+  </data>
+  <data name="plEnabledInvitingUserNotifications.Help" xml:space="preserve">
+    <value>Check the types of invitation status change notifications the inviting user may receive</value>
+  </data>
+  <data name="plEnabledInvitingUserNotifications.Text" xml:space="preserve">
+    <value>Enabled Inviting User Notifications</value>
+  </data>
+  <data name="plRequirePasswordConfirmOnChange.Help" xml:space="preserve">
+    <value>When checked the recipient must enter the new password a second time when changing passwords.</value>
+  </data>
+  <data name="plRequirePasswordConfirmOnChange.Text" xml:space="preserve">
+    <value>Require Password Confirm On Change</value>
+  </data>
+  <data name="plRequireTemporaryPasswordEntry.Help" xml:space="preserve">
+    <value>When checked the recipient must enter his Temporary Password (as provided in his invitation) at the time of acceptance.</value>
+  </data>
+  <data name="plRequireTemporaryPasswordEntry.Text" xml:space="preserve">
+    <value>Require Temporary Password Entry</value>
+  </data>
+  <data name="ProcessorSettings.Text" xml:space="preserve">
+    <value>Invitation Processor Form Settings</value>
+  </data>
+  <data name="Resent.Text" xml:space="preserve">
+    <value>Resent</value>
+  </data>
+  <data name="plProcessorPageName.Help" xml:space="preserve">
+    <value>Enter the name of the page on which a module will be automatically placed to handle processing of invitation acceptances and declinations. If the page does not already exist it will be created. This page will be hidden in the site navigation menu. This page should not be renamed manually at any time nor in these settings while any invitations are pending.</value>
+  </data>
+  <data name="plProcessorPageName.Text" xml:space="preserve">
+    <value>Invitation Processor Page</value>
+  </data>
+  <data name="plSuspendInvitationProcessing.Help" xml:space="preserve">
+    <value>When checked, the processing of invitation acceptances and declinations is temporarily suspended. Recipients attempting to accept or decline an invitation will be asked to try again at a later time.</value>
+  </data>
+  <data name="plSuspendInvitationProcessing.Text" xml:space="preserve">
+    <value>Suspend Invitation Processing</value>
+  </data>
+  <data name="plAllowDisplayNameModification.Text" xml:space="preserve">
+    <value>Allow Display Name Modification</value>
+  </data>
+  <data name="plEnableAcceptanceCaptcha.Help" xml:space="preserve">
+    <value>When checked the recipient will be required to successfully complete a Captcha test when submitting the acceptance  form.</value>
+  </data>
+  <data name="plEnableAcceptanceCaptcha.Text" xml:space="preserve">
+    <value>Enable Acceptance Captcha</value>
+  </data>
+  <data name="Accepted.Text" xml:space="preserve">
+    <value>Accepted</value>
+  </data>
+  <data name="All.Text" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="LockedOut.Text" xml:space="preserve">
+    <value>Locked Out</value>
+  </data>
+  <data name="Retracted.Text" xml:space="preserve">
+    <value>Retracted</value>
+  </data>
+  <data name="DuplicateProcessorPageName.Text" xml:space="preserve">
+    <value>The Invitation Processor Page name that you have specified cannot be the same as that of another page on your site that does not already contain a WESNet By Invitation processor module.</value>
+  </data>
+  <data name="EmptyProcessorPageName.Text" xml:space="preserve">
+    <value>You must specify an Invitation Processor Page name.</value>
+  </data>
+  <data name="InvalidProcessorPageName.Text" xml:space="preserve">
+    <value>The Invitation Processor Page Name that you have specified, '{0}', is not a valid name.</value>
+  </data>
+  <data name="valProcessorPageName.Required" xml:space="preserve">
+    <value>You must enter a name for the Invitation Processor Page.</value>
+  </data>
+  <data name="plEnabledAdminUserNotifications.Help" xml:space="preserve">
+    <value>Check the types of invitation status change notifications the site admin user may receive</value>
+  </data>
+  <data name="plEnabledAdminUserNotifications.Text" xml:space="preserve">
+    <value>Enabled Admin User Notifications</value>
+  </data>
+  <data name="PendingAcceptance.Text" xml:space="preserve">
+    <value>Pending Acceptance</value>
+  </data>
+  <data name="Sent.Text" xml:space="preserve">
+    <value>Sent</value>
+  </data>
+  <data name="plMaxFailedAttempts.Help" xml:space="preserve">
+    <value>Enter the maximum number of attempts allowed to accept the invitation. A failed attempt is one in which an invalid temporary password has been entered. A zerio in this field implies the recipient will never be locked out after entering an invalied password.</value>
+  </data>
+  <data name="plMaxFailedAttempts.Text" xml:space="preserve">
+    <value>Max Failed Acceptance Attempts</value>
+  </data>
+  <data name="plLockoutDuration.Help" xml:space="preserve">
+    <value>Enter the duration for which a user will be locked out of further attempts to accept the invitation after exceeding the maximum number of failed attempts.</value>
+  </data>
+  <data name="plLockoutDuration.Text" xml:space="preserve">
+    <value>Lockout Duration</value>
+  </data>
+  <data name="plAutoDeleteArchiveExpiredInvitations.Help" xml:space="preserve">
+    <value>Select whether expired invitations should be automatically deleted or archived.</value>
+  </data>
+  <data name="plAutoDeleteArchiveExpiredInvitations.Text" xml:space="preserve">
+    <value>Auto Delete/Archive Expired Invitations</value>
+  </data>
+  <data name="plDaysPastExpiration.Help" xml:space="preserve">
+    <value>When automatic deletion or archiving of expired invitations has been selected, this sets the number of days past an invitation's expiration that the action will be taken. </value>
+  </data>
+  <data name="plDaysPastExpiration.Text" xml:space="preserve">
+    <value>Days Past Expiration</value>
+  </data>
+  <data name="ArchiveAction.Text" xml:space="preserve">
+    <value>Archive Expired Invitation</value>
+  </data>
+  <data name="DeleteAction.Text" xml:space="preserve">
+    <value>Delete Expired Invitation</value>
+  </data>
+  <data name="NoAction.Text" xml:space="preserve">
+    <value>No Automatic Action</value>
+  </data>
+  <data name="plEnableAutoResend.Help" xml:space="preserve">
+    <value>When checked, invitations that are still pending will be resent automatically up to the maximum number of times and at the interval specified below. Inviting and administrative users may also manually resend invitations prior to their expiration.</value>
+  </data>
+  <data name="plEnableAutoResend.Text" xml:space="preserve">
+    <value>Enable Automatic Resend</value>
+  </data>
+  <data name="plRequireModeration.Help" xml:space="preserve">
+    <value>When checked all invitations created by users except administrators and those allowed to manage their own invitations will have to be approved by a moderator before they are sent. All users having "Moderate" permissions will receive notifications of newly created invitations requiring moderation.</value>
+  </data>
+  <data name="plRequireModeration.Text" xml:space="preserve">
+    <value>Require Moderation</value>
+  </data>
+  <data name="DigestOnly.Text" xml:space="preserve">
+    <value>Digest (Summary) Only</value>
+  </data>
+  <data name="Errored.Text" xml:space="preserve">
+    <value>Errored</value>
+  </data>
+  <data name="Approved.Text" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="Disapproved.Text" xml:space="preserve">
+    <value>Disapproved</value>
+  </data>
+  <data name="PendingModeration.Text" xml:space="preserve">
+    <value>Pending Moderation</value>
+  </data>
+  <data name="Finished.Text" xml:space="preserve">
+    <value>Bulk Import Finished</value>
+  </data>
+</root>
