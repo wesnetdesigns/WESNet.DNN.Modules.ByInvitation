@@ -1,0 +1,3 @@
+[submodule "ExpressionEvaluator"]
+	path = ExpressionEvaluator
+	url = https://github.com/wesnetdesigns/WESNet.Utilities.ExpressionEvaluator.git
