@@ -82,8 +82,8 @@ namespace WESNet.DNN.Modules.ByInvitation
                 SendInvitationHtml = string.Empty;
                 SendInvitationHtml = string.Empty;
                 InvitationSubject = string.Empty;
-                InvitationBody = string.Empty;
             }
+            InvitationBody = DefaultInvitationBody;
         }
 
         public int LocalizedConfigurationID { get; set; }
@@ -111,6 +111,14 @@ namespace WESNet.DNN.Modules.ByInvitation
             get
             {
                 return (string)Utilities.GetUserSetting(PortalId, "Security_EmailValidation", "");
+            }
+        }
+
+        public string DefaultInvitationBody
+        {
+            get
+            {
+                return Localization.GetString("Invitation.Body", Configuration.LocalSharedResourceFile, CultureCode);
             }
         }
 

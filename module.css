@@ -159,7 +159,7 @@ table.dnnFormCheckBoxes
 
 .WESNet_ByInvitation_Settings .dnnTextEditor
 {
-    width: 593px!important;
+    width: 560px!important;
     clear: right!important;
     float: left;
 }
@@ -276,6 +276,33 @@ div.WESNet_TimeSpanPicker
     margin-right: 10px;
 }
 
+.dnnFormItem .WESNet_InputGroup
+{
+    display:block;
+    float:left;
+    width:62%;
+    margin-bottom:5px;
+}
+
+.dnnFormItem .WESNet_InputGroup > input[type='text'],
+.dnnFormItem .WESNet_InputGroup > input[type='password'],
+.dnnFormItem .WESNet_InputGroup > input[type='email'],
+.dnnFormItem .WESNet_InputGroup > input[type='tel'],
+.dnnFormItem .WESNet_InputGroup > input[type='select'],
+.dnnFormItem .WESNet_InputGroup > textarea
+{
+    width:100%;
+
+}
+
+.WESNet_ByInvitation_Settings a.LoadDefaultButton
+{
+    display: block;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
 .WESNet_ByInvitation_Settings .RoleBasedLimits .dnnGrid
 {
     float: left;
@@ -295,10 +322,10 @@ div.WESNet_TimeSpanPicker
     padding-bottom: 20px!important;
 }
 
-/*.WESNet_ByInvitation_Settings input[type="text"] + a
-{
-    margin-left: 10px;
-}*/
+/* Fix for bad positioning of FileUploadDropZone in DnnFilePickerUploader control */
+*.WESNet_ByInvitation_Settings div.dnnFileUploadScope div.dnnLeft {
+    width: auto;
+}
 
 div.ProgressBar
 {

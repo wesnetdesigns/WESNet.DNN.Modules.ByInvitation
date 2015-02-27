@@ -41,12 +41,19 @@
             </div>
             <div class="dnnFormItem">
                 <dnn:Label ID="plInvitationBody" runat="server" ControlName="tbInvitationBody" />
-                <dnn:TextEditor ID="teInvitationBody" runat="server" />
+                <div class="WESNet_InputGroup">
+                    <asp:LinkButton ID="btnDefaultInvitationBody" runat="server" CssClass="LoadDefaultButton"
+                            CausesValidation="false"  ResourceKey="btnDefaultInvitationBody"></asp:LinkButton>
+                    <dnn:TextEditor ID="teInvitationBody" runat="server" />
+                </div>           
             </div>
-            <div class="dnnFormItem">
+            <div class="dnnFormItem">               
                 <dnn:Label ID="plEmailRegex" runat="server" ControlName="tbEmailRegex" />
-                <asp:TextBox ID="tbEmailRegex" runat="server"></asp:TextBox><asp:LinkButton ID="btnDefaultEmailRegex" runat="server"
+                <div class="WESNet_InputGroup">
+                    <asp:LinkButton ID="btnDefaultEmailRegex" runat="server" CssClass="LoadDefaultButton"
                       CausesValidation  ="false"  ResourceKey="btnDefaultEmailRegex"></asp:LinkButton>
+                    <asp:TextBox ID="tbEmailRegex" runat="server"></asp:TextBox>
+                </div>
             </div>
         </div>
     </fieldset>

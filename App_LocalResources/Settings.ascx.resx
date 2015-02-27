@@ -534,4 +534,7 @@
   <data name="Finished.Text" xml:space="preserve">
     <value>Bulk Import Finished</value>
   </data>
+  <data name="btnDefaultInvitationBody.Text" xml:space="preserve">
+    <value>Load Default</value>
+  </data>
 </root>

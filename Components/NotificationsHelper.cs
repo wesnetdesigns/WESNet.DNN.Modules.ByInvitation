@@ -95,7 +95,7 @@ namespace WESNet.DNN.Modules.ByInvitation
             objAction.NameResourceKey = actionName + ".Name";
             objAction.DescriptionResourceKey = actionName + ".Desc";
             if (confirmAction) objAction.ConfirmResourceKey = actionName + ".Confirm";
-            objAction.APICall = Configuration.ModulePath + "API/" + Configuration.ModuleName + "/" + actionName;
+            objAction.APICall = Configuration.ModulePath + "API/ByInvitationService/" + actionName;
             objAction.Order = order;
             actions.Add(objAction);
         }

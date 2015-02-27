@@ -117,6 +117,7 @@ namespace WESNet.DNN.Modules.ByInvitation
  	         base.OnInit(e);
              ctlCultureCode.ItemChanged +=new EventHandler(ctlCultureCode_ItemChanged);
              btnDefaultEmailRegex.Click += new EventHandler(btnDefaultEmailRegex_Click);
+             btnDefaultInvitationBody.Click += new EventHandler(btnDefaultInvitationBody_Click);
         }
 
         public override void LoadSettings()
@@ -299,6 +300,11 @@ namespace WESNet.DNN.Modules.ByInvitation
         protected void btnDefaultEmailRegex_Click (object sender, EventArgs e)
         {
             tbEmailRegex.Text = MyLocalizedConfiguration.DefaultEmailRegex;
+        }
+
+        protected void btnDefaultInvitationBody_Click(object sender, EventArgs e)
+        {
+            teInvitationBody.Text = MyLocalizedConfiguration.DefaultInvitationBody;
         }
 
         public override void UpdateSettings()

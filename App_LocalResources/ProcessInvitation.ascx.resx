@@ -265,7 +265,7 @@
     <value>New Password</value>
   </data>
   <data name="AcceptConfirmation.Text" xml:space="preserve">
-    <value>&lt;p&gt;Welcome [Invitation:RecipientFullName]{if [Invitation:AssignedUsername] !=""}&amp;nbsp;([Invitation:AssignedUsername]){endif}!&lt;br /&gt;&lt;br /&gt;Please review your registration information below, make any necessary changes, then click on 'Accept Invitation and Join Website' button below.&lt;/p&gt;</value>
+    <value>&lt;p&gt;Welcome [Invitation:RecipientFullName]{if ([Invitation:AssignedUsername] !="")}&amp;nbsp;([Invitation:AssignedUsername]){endif}!&lt;br /&gt;&lt;br /&gt;Please review your registration information below, make any necessary changes, then click on 'Accept Invitation and Join Website' button below.&lt;/p&gt;</value>
   </data>
   <data name="DeclineConfirmation.Text" xml:space="preserve">
     <value>&lt;p&gt;Hello [Invitation:RecipientFullName]:&lt;br /&gt;&lt;br /&gt;To confirm that you wish to decline your invitation, click on the 'Decline Invitation' button below. You may also postpone your decision to Accept or Decline by clicking on the 'Postpone Decision' button below.&lt;/p&gt;</value>
@@ -293,5 +293,11 @@
   </data>
   <data name="RolesAdded.Text" xml:space="preserve">
     <value>&lt;br /&gt;&lt;br /&gt;The following security roles have been applied to your user account:&lt;/br&gt;{0}</value>
+  </data>
+  <data name="plEmail.Help" xml:space="preserve">
+    <value>Your email address is your username.</value>
+  </data>
+  <data name="plEmail.Text" xml:space="preserve">
+    <value>Email Address</value>
   </data>
 </root>

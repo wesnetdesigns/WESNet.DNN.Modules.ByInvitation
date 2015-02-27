@@ -47,6 +47,7 @@ using DotNetNuke;
 using DotNetNuke.ComponentModel;
 using DotNetNuke.Entities.Portals;
 using DotNetNuke.Common.Utilities;
+using DotNetNuke.Services.Social.Notifications;
 using DotNetNuke.Services.Tokens;
 using DotNetNuke.Services.Scheduling;
 using DotNetNuke.Security.Membership;
@@ -199,7 +200,7 @@ namespace WESNet.DNN.Modules.ByInvitation
         public static InvitationInfo UpdateInvitationStatus(int invitationID, string action, int modifiedByUserID, DateTime newDateTimeValue)
         {
             action = action.ToLowerInvariant();
-            var validActionsSubset = validInvitationActions.Intersect(new[] { "extended", "lockedout" });
+            var validActionsSubset = validInvitationActions.Intersect(new[] { "approved", "extended", "lockedout" });
             if (!validActionsSubset.Contains(action)) throw new ArgumentException("Action must be one of: " + validActionsSubset.ToString(), "action");
 
             return CBO.FillObject <InvitationInfo>(_dataProvider.UpdateInvitationStatus(invitationID, action, modifiedByUserID, newDateTimeValue, Null.NullString, -1));
@@ -434,6 +435,18 @@ namespace WESNet.DNN.Modules.ByInvitation
                 SchedulingController.AddSchedule("WESNet.DNN.Modules.ByInvitation.InvitationScheduler, WESNet.DNN.Modules.ByInvitation",
                                                  10, "m", 5, "m", 10, "", false, true, "", null, "By Invitation Scheduler", DateTime.MinValue);
                                       
+            }
+            else if (Version == "01.00.01")
+            {
+                // Fix issue of incorrect API Call in NotificationTypeActions for Notification Type "ModerationRequested"
+                var notificationType = NotificationsController.Instance.GetNotificationType(Configuration.ModuleName + "_" + Consts.ModerationRequestedNotification.Name);
+                var actions = NotificationsController.Instance.GetNotificationTypeActions(notificationType.NotificationTypeId);
+                foreach (var action in actions)
+                {
+                    NotificationsController.Instance.DeleteNotificationTypeAction(action.NotificationTypeActionId);
+                    action.APICall = Configuration.ModulePath + "API/ByInvitationService/" + action.NameResourceKey.Replace(".Name", "");
+                }
+                NotificationsController.Instance.SetNotificationTypeActions(actions, notificationType.NotificationTypeId);
             }
             
             return Version;

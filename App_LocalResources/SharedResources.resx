@@ -444,4 +444,7 @@
   <data name="Anonymous.Text" xml:space="preserve">
     <value>Anonymous</value>
   </data>
+  <data name="DeletedUser.Text" xml:space="preserve">
+    <value>Deleted User</value>
+  </data>
 </root>

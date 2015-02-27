@@ -132,7 +132,15 @@ namespace WESNet.DNN.Modules.ByInvitation
         {
             get
             {
-                return AssignedUserID == -1 ? _AssignedUserName : UserController.GetUserById(PortalId, AssignedUserID).Username;
+                if (AssignedUserID != -1)
+                {
+                    var assignedUser = UserController.GetUserById(PortalId, AssignedUserID);
+                    return assignedUser == null ? _AssignedUserName : assignedUser.Username;
+                }
+                else
+                {
+                    return _AssignedUserName;
+                }
             }
             set
             {
@@ -271,7 +279,7 @@ namespace WESNet.DNN.Modules.ByInvitation
         {
             get
             {
-                return InvitedByUser.Username;
+                return InvitedByUser == null ? Utilities.LocalizeSharedResource("DeletedUser") : InvitedByUser.Username;
             }
         }
 
@@ -279,7 +287,8 @@ namespace WESNet.DNN.Modules.ByInvitation
         {
             get
             {
-                return InvitedByUserID == -1 ? InvitedByUserFullName : InvitedByUser.DisplayName;
+                return InvitedByUserID == -1 ? InvitedByUserFullName : 
+                          InvitedByUser == null ? Utilities.LocalizeSharedResource("DeletedUser") : InvitedByUser.DisplayName;
             }
         }
 
@@ -295,7 +304,7 @@ namespace WESNet.DNN.Modules.ByInvitation
         {
             get
             {
-                return RetractedByUser.Username;
+                return RetractedByUser == null ? Utilities.LocalizeSharedResource("DeletedUser") : RetractedByUser.Username;
             }
         }
 
@@ -303,7 +312,7 @@ namespace WESNet.DNN.Modules.ByInvitation
         {
             get
             {
-                return RetractedByUser.DisplayName;
+                return RetractedByUser == null ? Utilities.LocalizeSharedResource("DeletedUser") : RetractedByUser.DisplayName;
             }
         }
 
@@ -355,7 +364,7 @@ namespace WESNet.DNN.Modules.ByInvitation
         {
             get
             {
-                return ApprovedByUser.Username;
+                return ApprovedByUser == null ? Utilities.LocalizeSharedResource("DeletedUser") : ApprovedByUser.Username;
             }
         }
 
@@ -363,7 +372,7 @@ namespace WESNet.DNN.Modules.ByInvitation
         {
             get
             {
-                return ApprovedByUser.DisplayName;
+                return ApprovedByUser == null ? Utilities.LocalizeSharedResource("DeletedUser") : ApprovedByUser.DisplayName;
             }
         }
 
@@ -379,7 +388,7 @@ namespace WESNet.DNN.Modules.ByInvitation
         {
             get
             {
-                return DisapprovedByUser.Username;
+                return DisapprovedByUser == null ? Utilities.LocalizeSharedResource("DeletedUser") : DisapprovedByUser.Username;
             }
         }
 
@@ -387,7 +396,7 @@ namespace WESNet.DNN.Modules.ByInvitation
         {
             get
             {
-                return DisapprovedByUser.DisplayName;
+                return DisapprovedByUser == null ? Utilities.LocalizeSharedResource("DeletedUser") : DisapprovedByUser.DisplayName;
             }
         }
 

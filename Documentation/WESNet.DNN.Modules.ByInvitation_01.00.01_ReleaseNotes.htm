@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Release Notes for WESNet Designs By Invitation v 01.00.01</title>
+</head>
+<body>
+  <h2>Release Notes for WESNet Designs By Invitation v 01.00.01</h2>
+  <p style="font-weight:bold">Minimum DotNetNuke Framework Version:&nbsp;07.03.03</p>
+  <h4>Issues Fixed in This Release:</h4>
+  <ul>
+    <li>Clicking any action (Approve|Disapprove|EditApprove) in moderation requested notification results in error and action is not performed.</li>
+    <li>Null Reference Exception occurs when opening the Manage Invitations control if any invitation's inviting user account has been hard deleted.</li>
+    <li>Adjusted several rules in module.css to fix positioning issues in module's custom settings.</li>
+    <li>Fixed extraneous characters in processor form "Wecoome . . . " message displayed when accepting an invitation. Corrected ProcessInvitation.ascx.resx resource file.</li>
+    <li>Fixed failure of confirm dialog box opening when deleting expired invitations displayed in the Manage Invitations control.</li>
+  </ul>
+  <h4>Enhancements and Other Changes:</h4>
+  <ul>
+    <li>Added "Load Default" link button above Invitation Email Body text/html editor in module's custom settings to restore (from SharedResources.resx) the default invitation body html.</li>
+    <li>When site user settings have enabled "Use Email as Username", the accept invitation processor form now correctly displays 'Email Address' as the caption for the Username field.</li>
+    <li>When site user settings have enabled "Use Email as Username" and modification of Username is allowed upon acceptance, the Username/Email field's validation regular expression will be the site's email rather than username regex.</li>
+  </ul>
+  <p>Date of Release: February 27, 2015</p>
+</body>
+</html>

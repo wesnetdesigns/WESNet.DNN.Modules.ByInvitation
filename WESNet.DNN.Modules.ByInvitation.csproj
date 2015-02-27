@@ -197,12 +197,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="01.00.00.txt" />
+    <Content Include="01.00.01.txt" />
     <Content Include="App_LocalResources\ProcessInvitation.ascx.resx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Components\InvitationInfo.cs" />
     <Content Include="Controls\DataFieldMappingGrid.ascx" />
+    <Content Include="Documentation\WESNet.DNN.Modules.ByInvitation_01.00.01_ReleaseNotes.htm" />
     <Content Include="images\bulkimportprogressbar.gif" />
     <Content Include="Providers\DataProviders\SqlDataProvider\Uninstall.SqlDataProvider" />
     <Content Include="scripts\DataFieldMappingGrid.js" />
@@ -291,6 +292,9 @@
       <Project>{a00843ba-986a-4fb4-928f-9435cc44e48e}</Project>
       <Name>WESNet.Utilities.ExpressionEvaluator</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ExpressionEvaluator\ExpressionEvaluator\Properties\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -99,7 +99,7 @@
                                     <dnn:DnnImageButton id="btnApprove" IconKey="Approve" IconSize="16x16" CommandName="Approve" ResourceKey="Approve" runat="server" />
                                     <dnn:DnnImageButton id="btnDisapprove" IconKey="Reject" iconSize="16x16" CommandName="Disapprove" ResourceKey="Disapprove" runat="server" />
                                     <dnn:DnnImageButton ID="btnEditApprove" IconKey="Edit" IconSize="16x16" CommandName="EditApprove" ResourceKey="EditApprove"  runat="server" />
-                                    <dnn:DnnImageButton id="btnDeleteUnmoderated" IconKey="Delete" IconSize="16x16" CommandName="Delete" ResourceKey="Delete" runat="server" />
+                                    <dnn:DnnImageButton id="btnDeleteUnmoderated" CssClass="imgButtonDelete" IconKey="Delete" IconSize="16x16" CommandName="Delete" ResourceKey="Delete" runat="server" />
                                 </ItemTemplate>
                             </dnn:DnnGridTemplateColumn>
                             <dnn:DnnGridBoundColumn DataField="InvitedByUserDisplayName" HeaderText="InvitedBy"></dnn:DnnGridBoundColumn>
@@ -251,7 +251,7 @@
                                 <ItemTemplate>
                                     <dnn:DnnImageButton id="btnExtendExpired" IconSize="16x16" IconKey="Add" CommandName="Extend" ResourceKey="Extend" runat="server" />
                                     <dnn:DnnImageButton ID="btnArchiveExpired" IconKey="Save" IconSize="16x16" CommandName="Archive" ResourceKey="Archive"  runat="server" />
-                                    <dnn:DnnImageButton id="btnDeleteExpired" IconKey="Delete" IconSize="16x16" CommandName="Delete" ResourceKey="Delete" runat="server" />
+                                    <dnn:DnnImageButton id="btnDeleteExpired" CssClass="imgButtonDelete" IconKey="Delete" IconSize="16x16" CommandName="Delete" ResourceKey="Delete" runat="server" />
                                 </ItemTemplate>
                             </dnn:DnnGridTemplateColumn>
                             <dnn:DnnGridBoundColumn DataField="InvitedByUserDisplayName" HeaderText="InvitedBy"></dnn:DnnGridBoundColumn>
@@ -329,11 +329,12 @@
                 collapseText: '<%=Localization.GetString("CollapseAll", Localization.SharedResourceFile)%>',
                 targetArea: '#manageInvitationsContent'
             });
-            $('.imgButtonDelete').dnnConfirm({
+            $('#WESNet_ByInvitation_ManageInvitations .imgButtonDelete').dnnConfirm({
                 text: '<%= Localization.GetString("DeleteItem.Text", Localization.SharedResourceFile) %>',
                 yesText: '<%= Localization.GetString("Yes.Text", Localization.SharedResourceFile) %>',
                 noText: '<%= Localization.GetString("No.Text", Localization.SharedResourceFile) %>',
-                title: '<%= Localization.GetString("Confirm.Text", Localization.SharedResourceFile) %>'
+                title: '<%= Localization.GetString("Confirm.Text", Localization.SharedResourceFile) %>',
+                isButton: true
             });
         }
 

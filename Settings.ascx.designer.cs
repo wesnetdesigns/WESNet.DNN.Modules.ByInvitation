@@ -148,6 +148,15 @@ namespace WESNet.DNN.Modules.ByInvitation {
         protected global::DotNetNuke.UI.UserControls.LabelControl plInvitationBody;
         
         /// <summary>
+        /// btnDefaultInvitationBody control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnDefaultInvitationBody;
+        
+        /// <summary>
         /// teInvitationBody control.
         /// </summary>
         /// <remarks>
@@ -166,15 +175,6 @@ namespace WESNet.DNN.Modules.ByInvitation {
         protected global::DotNetNuke.UI.UserControls.LabelControl plEmailRegex;
         
         /// <summary>
-        /// tbEmailRegex control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbEmailRegex;
-        
-        /// <summary>
         /// btnDefaultEmailRegex control.
         /// </summary>
         /// <remarks>
@@ -182,6 +182,15 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton btnDefaultEmailRegex;
+        
+        /// <summary>
+        /// tbEmailRegex control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbEmailRegex;
         
         /// <summary>
         /// plValidityPeriod control.

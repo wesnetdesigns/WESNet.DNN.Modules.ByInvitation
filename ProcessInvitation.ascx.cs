@@ -298,9 +298,6 @@ namespace WESNet.DNN.Modules.ByInvitation
                         divActions.Visible = true;
                         cmdDeclineInvitation.Visible = false;
 
-                        val2Username.ValidationExpression = ModuleSecurity.UsernameValidation;
-                        val2Username.Enabled = !string.IsNullOrEmpty(ModuleSecurity.UsernameValidation);
-
                         if (ModuleSecurity.DisplayNameFormat == "")
                         {
                             divDisplayName.Visible = true;
@@ -348,11 +345,20 @@ namespace WESNet.DNN.Modules.ByInvitation
                             divPassword2.Visible = false;
                         }
 
-                        if (ModuleSecurity.UseEmailAsUsername && string.IsNullOrEmpty(Invitation.AssignedUsername))
+                        if (ModuleSecurity.UseEmailAsUsername)
                         {
-                            Invitation.AssignedUsername = Invitation.RecipientEmail;
+                            if (string.IsNullOrEmpty(Invitation.AssignedUsername))
+                            {
+                                Invitation.AssignedUsername = Invitation.RecipientEmail;
+                            }
+                            val2Username.ValidationExpression = ModuleSecurity.EmailValidation;                         
+                        }
+                        else
+                        {
+                            val2Username.ValidationExpression = ModuleSecurity.UsernameValidation;
                         }
 
+                        val2Username.Enabled = !string.IsNullOrEmpty(val2Username.ValidationExpression);
                         tbUsername.Text = Invitation.AssignedUsername;
                         tbUsername.Enabled = MyConfiguration.AllowUsernameModification || tbUsername.Text == "";
 
@@ -403,38 +409,44 @@ namespace WESNet.DNN.Modules.ByInvitation
                             }
                         }
 
+                        divQuestionAndAnswer.Visible = MembershipProviderConfig.RequiresQuestionAndAnswer;
+
+                        SetValidationGroup();
+
+                        divPersistLogin.Visible = DotNetNuke.Entities.Host.Host.RememberCheckbox;
+
+                        if (MyConfiguration.EnableAcceptanceCaptcha)
+                        {
+                            divCaptcha.Visible = true;
+                            ctlCaptcha.ErrorMessage = Localization.GetString("ctlCaptcha.Error", Configuration.LocalSharedResourceFile);
+                            ctlCaptcha.CaptchaTextBoxLabel = Localization.GetString("ctlCaptcha.TextBoxLabel", Configuration.LocalSharedResourceFile);
+                            ctlCaptcha.CaptchaLinkButtonText = Localization.GetString("ctlCaptchaLinkButton.Text", Configuration.LocalSharedResourceFile);
+                            ctlCaptcha.CaptchaAudioLinkButtonText = Localization.GetString("ctlCaptchaAudioLinkButton.Text", Configuration.LocalSharedResourceFile);
+                            ctlCaptcha.CaptchaImage.EnableCaptchaAudio = MyConfiguration.EnableCaptchaAudio;
+                            ctlCaptcha.IgnoreCase = MyConfiguration.CaptchaIsCaseInsensitive;
+                            ctlCaptcha.CaptchaImage.LineNoise = MyConfiguration.CaptchaLineNoise;
+                            ctlCaptcha.CaptchaImage.BackgroundNoise = MyConfiguration.CaptchaBackgroundNoise;
+                            ctlCaptcha.ValidationGroup = Consts.ValidationGroup;
+                        }
+                        else
+                        {
+                            divCaptcha.Visible = false;
+                        }
                     }
-
-                    divQuestionAndAnswer.Visible = MembershipProviderConfig.RequiresQuestionAndAnswer;
-
-                    if (MyConfiguration.EnableAcceptanceCaptcha)
-                    {
-                        divCaptcha.Visible = true;
-                        ctlCaptcha.ErrorMessage = Localization.GetString("ctlCaptcha.Error", Configuration.LocalSharedResourceFile);
-                        ctlCaptcha.CaptchaTextBoxLabel = Localization.GetString("ctlCaptcha.TextBoxLabel", Configuration.LocalSharedResourceFile);
-                        ctlCaptcha.CaptchaLinkButtonText = Localization.GetString("ctlCaptchaLinkButton.Text", Configuration.LocalSharedResourceFile);
-                        ctlCaptcha.CaptchaAudioLinkButtonText = Localization.GetString("ctlCaptchaAudioLinkButton.Text", Configuration.LocalSharedResourceFile);
-                        ctlCaptcha.CaptchaImage.EnableCaptchaAudio = MyConfiguration.EnableCaptchaAudio;
-                        ctlCaptcha.IgnoreCase = MyConfiguration.CaptchaIsCaseInsensitive;
-                        ctlCaptcha.CaptchaImage.LineNoise = MyConfiguration.CaptchaLineNoise;
-                        ctlCaptcha.CaptchaImage.BackgroundNoise = MyConfiguration.CaptchaBackgroundNoise;
-                        ctlCaptcha.ValidationGroup = Consts.ValidationGroup;
-                    }
-                    else
-                    {
-                        divCaptcha.Visible = false;
-                    }
-
-                    SetValidationGroup();
-
-                    divPersistLogin.Visible = DotNetNuke.Entities.Host.Host.RememberCheckbox;
                 }
             }
 
-            tbTemporaryPassword.Attributes.Add("value", tbTemporaryPassword.Text);
-            tbPassword.Attributes.Add("value", tbPassword.Text);
-            tbPassword2.Attributes.Add("value", tbPassword2.Text);
-            if (Action == "profile")
+            // Below must be run on ALL Postbacks
+
+            if (Action == "join")
+            {
+                if (ModuleSecurity.UseEmailAsUsername) plUsername.ResourceKey = "plEmail";
+
+                tbTemporaryPassword.Attributes.Add("value", tbTemporaryPassword.Text);
+                tbPassword.Attributes.Add("value", tbPassword.Text);
+                tbPassword2.Attributes.Add("value", tbPassword2.Text);
+            }
+            else if (Action == "profile")
             {
                 BindProfileEditor();  //Viewstate disabled so needs to be rebound on each postback
             }
