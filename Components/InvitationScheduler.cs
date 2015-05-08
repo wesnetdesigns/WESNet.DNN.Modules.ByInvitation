@@ -162,7 +162,7 @@ namespace WESNet.DNN.Modules.ByInvitation
                     else
                     {
                         errorCount++;
-                        notificationsSent += NotificationsHelper.SendNotifications(invitation, Notifications.Errored, errMsg);
+                        notificationsSent += NotificationsHelper.SendNotifications(invitation, Notifications.Errored, "Sending new invitations . . .<br />" + errMsg);
                     }
                 }
                 if (invitationsSent > 0 || notificationsSent > 0 || errorCount > 0)
@@ -194,7 +194,7 @@ namespace WESNet.DNN.Modules.ByInvitation
                         else
                         {
                             errorCount++;
-                            notificationsSent += NotificationsHelper.SendNotifications(invitation, Notifications.Errored, errMsg);
+                            notificationsSent += NotificationsHelper.SendNotifications(invitation, Notifications.Errored, "Resending invitations automatically . . .<br />" + errMsg);
                         }
                     }
                 }
@@ -218,7 +218,7 @@ namespace WESNet.DNN.Modules.ByInvitation
                         InvitationInfo currentInvitation = null;
                         if (configuration.AutoDeleteArchiveExpiredInvitations == ExpiredInvitationActions.Archive)
                         {
-                            currentInvitation = InvitationController.UpdateInvitationStatus(invitation.InvitationID, "archive", -1);
+                            currentInvitation = InvitationController.UpdateInvitationStatus(invitation.InvitationID, "archived", -1);
                             invitationsArchived++;
                         }
                         else

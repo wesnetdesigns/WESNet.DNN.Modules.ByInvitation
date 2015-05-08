@@ -353,6 +353,9 @@ namespace WESNet.DNN.Modules.ByInvitation
 
             var subject = string.Empty;
             var body = string.Empty;
+            var tokenizedSubject = string.Empty;
+            var tokenizedBody = string.Empty;
+
             MailFormat mailFormat;
             try
             {
@@ -403,15 +406,14 @@ namespace WESNet.DNN.Modules.ByInvitation
                             break;
                     }
                 }
-
-                mailFormat = (MailFormat == MailFormat.Text ? MailFormat.Text : (HtmlUtils.IsHtml(body) ? MailFormat.Html : MailFormat.Text));
-                body = (MailFormat == MailFormat.Html ? Globals.ManageUploadDirectory(body, PortalSettings.HomeDirectory) : body);
-
                 if (string.IsNullOrEmpty(subject)) return "MailManager Error: Subject cannot be empty or null";
                 if (string.IsNullOrEmpty(body)) return "MailManager Error: Body cannot be empty or null";
 
-                string tokenizedSubject = subject;
-                string tokenizedBody = body;
+                mailFormat = (MailFormat == MailFormat.Text ? MailFormat.Text : (HtmlUtils.IsHtml(body) ? MailFormat.Html : MailFormat.Text));
+                body = (MailFormat == MailFormat.Html ? Globals.ManageUploadDirectory(body, PortalSettings.HomeDirectory) : body);
+                
+                tokenizedSubject = subject;
+                tokenizedBody = body;
 
                 if (ReplaceTokens)
                 {
@@ -545,7 +547,7 @@ namespace WESNet.DNN.Modules.ByInvitation
             }
             catch (Exception exc)
             {
-                result += "Mail Manager Exception: " + exc.Message;
+                result += "Mail Manager Exception:<br />  Message Key: " + messageKey + "<br />  Invitation Culture Code: " + Invitation.RecipientCultureCode + "<br />  Subject: " + tokenizedSubject + "<br />  Body: " + tokenizedBody + "<br />Exception: <br />" + exc.ToString();
             }
 
             return result;
