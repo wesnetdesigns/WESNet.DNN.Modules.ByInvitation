@@ -143,9 +143,15 @@ namespace WESNet.DNN.Modules.ByInvitation
         public static string FormattedUTCDate(DateTime value, UserInfo accessingUser, string format, System.Globalization.CultureInfo formatProvider)
         {
             DateTime localTime;
-            if (accessingUser == null || accessingUser.UserID == -1)
+            if (accessingUser == null || (accessingUser.PortalID == Null.NullInteger && HttpContext.Current == null))
             {
-                localTime = TimeZoneInfo.ConvertTime(value, TimeZoneInfo.Utc, PortalController.Instance.GetCurrentPortalSettings().TimeZone);
+                localTime = value;
+            }
+            else if (accessingUser.UserID == Null.NullInteger)
+            {
+                PortalSettings ps = PortalSettings.Current;
+                if (ps == null) ps = new PortalSettings(accessingUser.PortalID);
+                localTime = TimeZoneInfo.ConvertTime(value, TimeZoneInfo.Utc, ps.TimeZone);
             }
             else
             {

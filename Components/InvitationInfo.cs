@@ -593,25 +593,32 @@ namespace WESNet.DNN.Modules.ByInvitation
                 }
                 else
                 {
-                    var portalSettings = new PortalSettings(processorPageTabID, PortalId);
-                    if (portalSettings.PortalAlias == null)
-                    {
-                        if (portalSettings.PrimaryAlias != null)
-                        {
-                            portalSettings.PortalAlias = portalSettings.PrimaryAlias;
-                        }
-                        else
-                        {
-                            var primaryAlias = PortalAliasController.Instance.GetPortalAliasesByPortalId(PortalId).Where(p => p.IsPrimary).First();
-                            portalSettings.PortalAlias = primaryAlias;
-                        }
-                    }
-                    var paramList = new List<string>();
-                    paramList.Add("pid=" + PortalId.ToString());
-                    paramList.Add("email=" + UrlUtils.EncodeParameter(RecipientEmail));
-                    paramList.Add("rsvpcode=" + RSVPCode);
-                    paramList.Add("action=" + action);
-                    return DotNetNuke.Common.Globals.NavigateURL(processorPageTabID, portalSettings, "", paramList.ToArray());
+                    var primaryAlias = PortalAliasController.Instance.GetPortalAliasesByPortalId(PortalId).Where(p => p.IsPrimary).First();
+                    //var portalSettings = new PortalSettings(processorPageTabID, primaryAlias);
+                    //if (portalSettings.PortalAlias == null)
+                    //{
+                    //    if (portalSettings.PrimaryAlias != null)
+                    //    {
+                    //        portalSettings.PortalAlias = portalSettings.PrimaryAlias;
+                    //    }
+                    //    else
+                    //    {
+                    //        var primaryAlias = PortalAliasController.Instance.GetPortalAliasesByPortalId(PortalId).Where(p => p.IsPrimary).First();
+                    //        portalSettings.PortalAlias = primaryAlias;
+                    //    }
+                    //}
+
+                    //var paramList = new List<string>();
+                    //paramList.Add("pid=" + PortalId.ToString());
+                    //paramList.Add("email=" + UrlUtils.EncodeParameter(RecipientEmail));
+                    //paramList.Add("rsvpcode=" + RSVPCode);
+                    //paramList.Add("action=" + action);
+                    //var actionLinkUrl = DotNetNuke.Common.Globals.NavigateURL(processorPageTabID, portalSettings, "", paramList.ToArray());
+
+                    var actionLinkUrl = string.Format(Globals.AddHTTP(primaryAlias.HTTPAlias) + "/" + Globals.glbDefaultPage + "?tabid={0}&pid={1}&email={2}&rsvpcode={3}&action={4}",
+                                                 processorPageTabID, PortalId, UrlUtils.EncodeParameter(RecipientEmail), RSVPCode, action);
+                    
+                    return actionLinkUrl;
                 }
             }
             else
@@ -694,6 +701,11 @@ namespace WESNet.DNN.Modules.ByInvitation
         {
             if (string.IsNullOrEmpty(format)) format = "g";
             if (formatProvider == null) formatProvider = System.Threading.Thread.CurrentThread.CurrentCulture;
+
+            if (accessingUser != null && accessingUser.PortalID == Null.NullInteger)
+            {
+                accessingUser.PortalID = PortalId;
+            }
 
             propertyNotFound = false;
             string result = string.Empty;

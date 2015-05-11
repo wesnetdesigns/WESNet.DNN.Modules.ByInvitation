@@ -1,6 +1,6 @@
 ﻿<dotnetnuke type="Package" version="6.0">
     <packages>
-        <package name="WESNet_ByInvitation" type="Module" version="01.00.01.02">
+        <package name="WESNet_ByInvitation" type="Module" version="01.00.01.04">
             <friendlyName>By Invitation</friendlyName>
             <description>Invite your friends, family and co-workers to register as a user on this site via an automatic email which will contain a link with a one-time RSVP code that when clicked will create their account, apply selected security roles, log them in and then redirect the new user to a selected site page.</description>
             <iconFile>DesktopModules/WESNet_ByInvitation/images/ByInvitation.png</iconFile>
@@ -139,7 +139,7 @@
                 <component type="Cleanup" version="01.00.01" fileName="01.00.01.txt" />
             </components>
         </package>
-        <package name="WESNet_ByInvitation_Processor" type="Module" version="01.00.01.02">
+        <package name="WESNet_ByInvitation_Processor" type="Module" version="01.00.01.04">
             <friendlyName>By Invitation Processor</friendlyName>
             <description>Invitation processing module for WESNet_ByInvitation.</description>
             <iconFile>DesktopModules/WESNet_ByInvitation/images/ByInvitation.png</iconFile>
