@@ -197,16 +197,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="01.00.01.txt" />
+    <Content Include="01.00.02.txt" />
     <Content Include="App_LocalResources\ProcessInvitation.ascx.resx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Components\InvitationInfo.cs" />
     <Content Include="Controls\DataFieldMappingGrid.ascx" />
     <Content Include="Documentation\WESNet.DNN.Modules.ByInvitation_01.00.01_ReleaseNotes.htm" />
+    <Content Include="Documentation\WESNet.DNN.Modules.ByInvitation_01.00.02_ReleaseNotes.htm" />
     <Content Include="images\bulkimportprogressbar.gif" />
     <Content Include="Providers\DataProviders\SqlDataProvider\Uninstall.SqlDataProvider" />
     <Content Include="scripts\DataFieldMappingGrid.js" />
+    <Content Include="Providers\DataProviders\SqlDataProvider\01.00.02.SqlDataProvider" />
     <None Include="WESNet.DNN.Modules.ByInvitation.dnn" />
     <None Include="_buildfiles\BuildConfiguration.targets" />
   </ItemGroup>

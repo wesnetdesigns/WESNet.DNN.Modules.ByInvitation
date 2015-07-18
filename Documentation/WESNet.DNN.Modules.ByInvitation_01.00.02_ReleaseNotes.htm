@@ -1,0 +1,31 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Release Notes for WESNet Designs By Invitation v 01.00.02</title>
+</head>
+<body>
+    <h2>Release Notes for WESNet Designs By Invitation v 01.00.02</h2>
+    <p style="font-weight:bold">Minimum DotNetNuke Framework Version:&nbsp;07.03.03</p>
+    <h4>Issues Fixed in This Release:</h4>
+    <ul>
+        <li>Null Reference Exception occurs when invitations are emailed from within scheduled job if advanced url rewriting is NOT enabled (urlFormat="advanced") in web.config. New installs of DNN
+        7.2 and later will by default use advanced url rewriting. However sites upgraded from earlier DNN versions will not have advanced url rewriting enabled unless web.config has been manually
+        modified. The DNN core's BasicFriendlyUrlProvider.GetFriendlyAlias method which is called from NavigateUrl method cannot be called from within a scheduled job as no HttpContext is available.
+        This longstanding core issue was corrected in the AdvancedUrlProvider.GetFriendlyAlias method but never back ported to the BasicFriendlyUrlProvider.
+        
+        Applied workaround by building the Join Now and Decline URL's by hand rather than calling NavigateUrl from with a scheduled job.
+        </li>
+        <li>Null Reference Exception occurs in core NotificationsController during enumeration of recipient UserInfo objects when invitations are manually created. Updated UpdateInvitationStatus stored procedure to perform left outer join rather
+        than inner join on DNN Tabs table. Issue is indirectly triggered by change in DNN 7.4.1 and later versions, from storing the default (none) redirect value on login TabID in PortalSettings as null to no entry in PortalSettings table when default.</li>
+        <li>When recipient of invitation clicks on emailed "Join Now" or "Decline" links, he receives a message that the link is invalid and is not able to proceed with invitation processing. Modified join type on Tabs table in GetInvitationByPortalAndRSVPCode stored procedure.</li>
+        <li>Fixed several SQL stored proceedures having Tabs table join issues as above.</li>
+        <li>System.ArgumentException is thrown with message "Action must be one of: System.Linq.Enumerable" during resending of invitations by scheduled job when inviting user or administrator notification of resent invitations is enabled. Fixed typing error in list of valid action strings.</li>
+        <li>When invitation acceptance processor form is configured to require entry of temporary password contained in email invitation, the temporary password was already filled in upon initial display of the form.</li>
+    </ul>
+    <h4>Enhancements and Other Changes:</h4>
+    <ul>
+        <li>None</li>
+    </ul>
+    <p>Date of Release: July 18, 2015</p>
+</body>
+</html>

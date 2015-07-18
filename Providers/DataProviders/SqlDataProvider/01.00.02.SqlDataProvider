@@ -1,0 +1,238 @@
+﻿/*********************************************************************************************/
+/******                                                                                 ******/
+/******           Database Install Script for WESNet_ByInvitation v 1.00.02             ******/
+/******                              (Azure Compatible)                                 ******/
+/******         NOTE: When executing this script manually you must first replace the    ******/
+/******               {databaseOwner} and {objectQualifier} tokens with values          ******/
+/******               defined in the <data defaultProvider="SqlDataProvider"> section   ******/
+/******               of your website's web.config file.                                ******/
+/******                                                                                 ******/
+/*********************************************************************************************/
+
+/****** Object:  StoredProcedure dbo.[DNN_WESNet_ByInvitation_UpdateInvitationStatus]    Script Date: 7/1/2015 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateInvitationStatus]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateInvitationStatus]
+GO
+
+CREATE PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_UpdateInvitationStatus]
+	@InvitationID			int,
+	@Action					nvarchar(15),
+	@ModifiedByUserID		int,
+	@NewDateTimeValue		datetime,
+	@ReasonDeclined			nvarchar(1000),
+	@AssignedUserID			int
+			
+AS
+	DECLARE @ActionTakenOnDate datetime = GETUTCDATE();
+
+	IF @Action = 'approved'
+
+		UPDATE {databaseOwner}{objectQualifier}WESNet_ByInvitation_Invitations
+		SET
+			ApprovedOnDate = @ActionTakenOnDate,
+			ApprovedByUserID = @ModifiedByUserID,
+			ExpiresOnDate = @NewDateTimeValue,
+			LastModifiedByUserID = @ModifiedByUserID,
+			LastModifiedOnDate = GETUTCDATE()
+		WHERE InvitationID = @InvitationID
+
+	ELSE IF @Action = 'disapproved'
+
+		UPDATE {databaseOwner}{objectQualifier}WESNet_ByInvitation_Invitations
+		SET
+			DisapprovedOnDate = @ActionTakenOnDate,
+			DisapprovedByUserID = @ModifiedByUserID,
+			LastModifiedByUserID = @ModifiedByUserID,
+			LastModifiedOnDate = GETUTCDATE()
+		WHERE InvitationID = @InvitationID
+
+	ELSE IF @Action = 'sent'
+
+		UPDATE {databaseOwner}{objectQualifier}WESNet_ByInvitation_Invitations
+		SET
+			SentOnDate = @ActionTakenOnDate,
+			LastModifiedByUserID = @ModifiedByUserID,
+			LastModifiedOnDate = GETUTCDATE()
+		WHERE InvitationID = @InvitationID
+
+	ELSE IF @Action = 'resent'
+	
+		UPDATE {databaseOwner}{objectQualifier}WESNet_ByInvitation_Invitations
+		SET
+			LastResentOnDate = @ActionTakenOnDate,
+			ResentCount = Isnull(ResentCount, 0) + 1,
+			LastModifiedByUserID = @ModifiedByUserID,
+			LastModifiedOnDate = GETUTCDATE()
+		WHERE InvitationID = @InvitationID
+		
+	ELSE IF @Action = 'retracted'
+	
+		UPDATE {databaseOwner}{objectQualifier}WESNet_ByInvitation_Invitations
+		SET
+			RetractedOnDate = @ActionTakenOnDate,
+			RetractedByUserID = @ModifiedByUserID,
+			LastModifiedByUserID = @ModifiedByUserID,
+			LastModifiedOnDate = GETUTCDATE()
+		WHERE InvitationID = @InvitationID
+		
+	ELSE IF @Action = 'unretracted'
+	
+		UPDATE {databaseOwner}{objectQualifier}WESNet_ByInvitation_Invitations
+		SET
+			RetractedOnDate = null,
+			RetractedByUserID = null,
+			LastModifiedByUserID = @ModifiedByUserID,
+			LastModifiedOnDate = GETUTCDATE()
+		WHERE InvitationID = @InvitationID
+		
+	ELSE IF @Action = 'declined'
+	
+		UPDATE {databaseOwner}{objectQualifier}WESNet_ByInvitation_Invitations
+		SET
+			DeclinedOnDate = @ActionTakenOnDate,
+			ReasonDeclined = @ReasonDeclined,
+			LastModifiedByUserID = @ModifiedByUserID,
+			LastModifiedOnDate = GETUTCDATE()
+		WHERE InvitationID = @InvitationID
+		
+	ELSE IF @Action = 'lockedout'
+	
+		UPDATE {databaseOwner}{objectQualifier}WESNet_ByInvitation_Invitations
+		SET
+			LockedoutUntilDate = @NewDateTimeValue,
+			LastModifiedByUserID = @ModifiedByUserID,
+			LastModifiedOnDate = GETUTCDATE()
+		WHERE InvitationID = @InvitationID
+	
+	ELSE IF @Action = 'unlocked'
+	
+		UPDATE {databaseOwner}{objectQualifier}WESNet_ByInvitation_Invitations
+		SET
+			FailedAttemptCount = 0,
+			LockedoutUntilDate = null,
+			LastModifiedByUserID = @ModifiedByUserID,
+			LastModifiedOnDate = GETUTCDATE()
+		WHERE InvitationID = @InvitationID
+			
+	ELSE IF @Action = 'extended'
+	
+		UPDATE {databaseOwner}{objectQualifier}WESNet_ByInvitation_Invitations
+		SET
+			ExpiresOnDate = @NewDateTimeValue,
+			LastModifiedByUserID = @ModifiedByUserID,
+			LastModifiedOnDate = GETUTCDATE()
+		WHERE InvitationID = @InvitationID
+		
+	ELSE IF @Action = 'accepted'
+	
+		UPDATE {databaseOwner}{objectQualifier}WESNet_ByInvitation_Invitations
+		SET
+			AcceptedOnDate = @ActionTakenOnDate,
+			AssignedUserID = @AssignedUserID,
+			LastModifiedByUserID = @ModifiedByUserID,
+			LastModifiedOnDate = GETUTCDATE()
+		WHERE InvitationID = @InvitationID
+		
+	ELSE IF @Action = 'archived'
+	
+		UPDATE {databaseOwner}{objectQualifier}WESNet_ByInvitation_Invitations
+		SET
+			IsArchived = 1,
+			LastModifiedByUserID = @ModifiedByUserID,
+			LastModifiedOnDate = GETUTCDATE()
+		WHERE InvitationID = @InvitationID
+		
+	ELSE IF @Action = 'unarchived'
+	
+		UPDATE {databaseOwner}{objectQualifier}WESNet_ByInvitation_Invitations
+		SET
+			IsArchived = 0,
+			LastModifiedByUserID = @ModifiedByUserID,
+			LastModifiedOnDate = GETUTCDATE()
+		WHERE InvitationID = @InvitationID
+
+	ELSE IF @Action = 'pwdfailed'
+		UPDATE {databaseOwner}{objectQualifier}WESNet_ByInvitation_Invitations
+		SET
+			FailedAttemptCount = FailedAttemptCount + 1,
+			LastModifiedByUserID = @ModifiedByUserID,
+			LastModifiedOnDate = GetUTCDATE()
+		WHERE InvitationID = @InvitationID;
+
+	SELECT
+		I.*,
+		T.TabName as "RedirectOnFirstLoginTabName"
+	FROM {databaseOwner}{objectQualifier}WESNet_ByInvitation_Invitations I
+	Left Outer Join {databaseOwner}{objectQualifier}Tabs T on T.TabID = I.RedirectOnFirstLogin
+	WHERE InvitationID = @InvitationID
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitation]    Script Date: 7/1/2015 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitation]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitation]
+GO
+
+CREATE PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitation]
+	@InvitationID	int
+AS
+	SELECT
+		I.*,
+		T.TabName as "RedirectOnFirstLoginTabName"
+	FROM {databaseOwner}{objectQualifier}WESNet_ByInvitation_Invitations I
+	Left Outer Join {databaseOwner}{objectQualifier}Tabs T on T.TabID = I.RedirectOnFirstLogin
+	WHERE InvitationID = @InvitationID
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByAssignedUsername]    Script Date: 7/1/2015 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByAssignedUsername]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByAssignedUsername]
+GO
+
+CREATE PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByAssignedUsername]
+	@PortalId			int,
+	@AssignedUsername	nvarchar(100)
+		
+AS
+	SELECT
+		I.*,
+		T.TabName as "RedirectOnFirstLoginTabName"
+	FROM {databaseOwner}{objectQualifier}WESNet_ByInvitation_Invitations I
+	Left Outer Join {databaseOwner}{objectQualifier}Tabs T on T.TabID = I.RedirectOnFirstLogin
+	WHERE I.PortalId = @PortalId and AssignedUsername = @AssignedUsername;
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByRecipientEmail]    Script Date: 7/1/2015 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByRecipientEmail]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByRecipientEmail]
+GO
+
+CREATE PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByRecipientEmail]
+	@PortalId			int,
+	@RecipientEmail		nvarchar(256)
+		
+AS
+	SELECT
+		I.*,
+		T.TabName as "RedirectOnFirstLoginTabName"
+	FROM {databaseOwner}{objectQualifier}WESNet_ByInvitation_Invitations I
+	Left Outer Join {databaseOwner}{objectQualifier}Tabs T on T.TabID = I.RedirectOnFirstLogin
+	WHERE I.PortalId = @PortalId and RecipientEmail = @RecipientEmail;
+GO
+
+/****** Object:  StoredProcedure {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByPortalAndRSVPCode]    Script Date: 7/1/2015 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByPortalAndRSVPCode]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByPortalAndRSVPCode]
+GO
+
+CREATE PROCEDURE {databaseOwner}[{objectQualifier}WESNet_ByInvitation_GetInvitationByPortalAndRSVPCode]
+	@PortalId			int,
+	@RSVPCode			uniqueidentifier
+		
+AS
+	SELECT
+		I.*,
+		T.TabName as "RedirectOnFirstLoginTabName"
+	FROM {databaseOwner}{objectQualifier}WESNet_ByInvitation_Invitations I
+	Left Outer Join {databaseOwner}{objectQualifier}Tabs T on T.TabID = I.RedirectOnFirstLogin
+	WHERE I.PortalId = @PortalId and RSVPCode = @RSVPCode;
+GO

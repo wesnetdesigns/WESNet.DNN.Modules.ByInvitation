@@ -402,7 +402,7 @@ namespace WESNet.DNN.Modules.ByInvitation
                         }
                         else
                         {
-                            if (!divTemporaryPassword.Visible)
+                            if (!divTemporaryPassword.Visible && !MyConfiguration.RequirePasswordChangeOnAcceptance)
                             {
                                 tbPassword.Text = decryptedPassword;
                                 tbPassword2.Text = decryptedPassword;
@@ -435,16 +435,18 @@ namespace WESNet.DNN.Modules.ByInvitation
                     }
                 }
             }
+            else if (Action == "join")
+            {
+                tbTemporaryPassword.Attributes.Add("value", tbTemporaryPassword.Text);
+                tbPassword.Attributes.Add("value", tbPassword.Text);
+                tbPassword2.Attributes.Add("value", tbPassword2.Text);
+            }
 
-            // Below must be run on ALL Postbacks
+            // Below must be run on whether initial Page Load or Postback
 
             if (Action == "join")
             {
                 if (ModuleSecurity.UseEmailAsUsername) plUsername.ResourceKey = "plEmail";
-
-                tbTemporaryPassword.Attributes.Add("value", tbTemporaryPassword.Text);
-                tbPassword.Attributes.Add("value", tbPassword.Text);
-                tbPassword2.Attributes.Add("value", tbPassword2.Text);
             }
             else if (Action == "profile")
             {

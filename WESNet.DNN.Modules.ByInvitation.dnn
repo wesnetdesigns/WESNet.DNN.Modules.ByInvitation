@@ -1,6 +1,6 @@
 ﻿<dotnetnuke type="Package" version="6.0">
     <packages>
-        <package name="WESNet_ByInvitation" type="Module" version="01.00.01.04">
+        <package name="WESNet_ByInvitation" type="Module" version="01.00.02.01">
             <friendlyName>By Invitation</friendlyName>
             <description>Invite your friends, family and co-workers to register as a user on this site via an automatic email which will contain a link with a one-time RSVP code that when clicked will create their account, apply selected security roles, log them in and then redirect the new user to a selected site page.</description>
             <iconFile>DesktopModules/WESNet_ByInvitation/images/ByInvitation.png</iconFile>
@@ -11,7 +11,7 @@
                 <email>bill@wesnetdesigns.com</email>
             </owner>
             <license src="Documentation\License.htm"/>
-            <releaseNotes src="Documentation\WESNet.DNN.Modules.ByInvitation_01.00.01_ReleaseNotes.htm" />
+            <releaseNotes src="Documentation\WESNet.DNN.Modules.ByInvitation_01.00.02_ReleaseNotes.htm" />
             <azureCompatible>true</azureCompatible>
             <dependencies>
                 <dependency type="CoreVersion">07.03.03</dependency>
@@ -25,6 +25,11 @@
                             <path>Providers\DataProviders\SqlDataProvider</path>
                             <name>01.00.00.SqlDataProvider</name>
                             <version>01.00.00</version>
+                        </script>
+                        <script type="Install">
+                          <path>Providers\DataProviders\SqlDataProvider</path>
+                          <name>01.00.02.SqlDataProvider</name>
+                          <version>01.00.02</version>
                         </script>
                         <script type="Uninstall">
                             <path>Providers\DataProviders\SqlDataProvider</path>
@@ -105,7 +110,7 @@
                         <attributes>
                             <businessControllerClass>WESNet.DNN.Modules.ByInvitation.InvitationController</businessControllerClass>
                             <desktopModuleID>[DESKTOPMODULEID]</desktopModuleID>
-                            <upgradeVersionsList>01.00.00,01.00.01</upgradeVersionsList>
+                            <upgradeVersionsList>01.00.00,01.00.01,01.00.02</upgradeVersionsList>
                         </attributes>
                     </eventMessage>
                 </component>
@@ -114,7 +119,7 @@
                         <assembly>
                           <path>bin</path>
                           <name>WESNet.DNN.Modules.ByInvitation.dll</name>
-                          <version>1.0.1.1</version>
+                          <version>1.0.2.1</version>
                         </assembly>
                         <assembly>
                           <path>bin</path>
@@ -136,10 +141,10 @@
                         </resourceFile>
                     </resourceFiles>
                 </component>
-                <component type="Cleanup" version="01.00.01" fileName="01.00.01.txt" />
+                <component type="Cleanup" version="01.00.02" fileName="01.00.02.txt" />
             </components>
         </package>
-        <package name="WESNet_ByInvitation_Processor" type="Module" version="01.00.01.04">
+        <package name="WESNet_ByInvitation_Processor" type="Module" version="01.00.02.01">
             <friendlyName>By Invitation Processor</friendlyName>
             <description>Invitation processing module for WESNet_ByInvitation.</description>
             <iconFile>DesktopModules/WESNet_ByInvitation/images/ByInvitation.png</iconFile>
@@ -150,7 +155,7 @@
                 <email>bill@wesnetdesigns.com</email>
             </owner>
             <license src="Documentation\License.htm"/>
-            <releaseNotes src="Documentation\WESNet.DNN.Modules.ByInvitation_01.00.01_ReleaseNotes.htm" />
+            <releaseNotes src="Documentation\WESNet.DNN.Modules.ByInvitation_01.00.02_ReleaseNotes.htm" />
             <dependencies>
                 <dependency type="CoreVersion">07.03.03</dependency>
             </dependencies>

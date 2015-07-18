@@ -5,7 +5,7 @@
     <CompanyName>WESNet</CompanyName>
     <ProductName>ByInvitation</ProductName>
     <DesktopModulesFolderName>$(CompanyName)_$(ProductName)</DesktopModulesFolderName>
-    <DevelopmentRootDirectory>C:\DNN Development</DevelopmentRootDirectory>
+    <DevelopmentRootDirectory>D:\DNN Development</DevelopmentRootDirectory>
     <DevelopmentModulesDirectory>$(DevelopmentRootDirectory)\_modules</DevelopmentModulesDirectory>
     <DevelopmentModuleDirectory>$(DevelopmentModulesDirectory)\$(CompanyName)\$(AssemblyName)</DevelopmentModuleDirectory>
     <PackageDirectory>$(MSBuildProjectDirectory)\_packages</PackageDirectory>
@@ -16,8 +16,8 @@
     <ReferencesVersion>07.03.03</ReferencesVersion>
     <ReferencePath>$(ReferencesRootDirectory)\$(ReferencesVersion)</ReferencePath>
     <DNNManifestFilePath>$(MSBuildProjectDirectory)\$(AssemblyName).dnn</DNNManifestFilePath>
-    <BaseWebsitePath>C:\DNN Websites</BaseWebsitePath>
-    <WebsitePath>dnn73xsource\Website</WebsitePath>
+    <BaseWebsitePath>D:\DNN Websites</BaseWebsitePath>
+    <WebsitePath>dnn741source\Website</WebsitePath>
     <WebSiteRootPath>$(BaseWebsitePath)\$(WebsitePath)</WebSiteRootPath>
     <WebSiteModuleFolder>$(WebsiteRootPath)\DesktopModules\$(DesktopModulesFolderName)</WebSiteModuleFolder>
     <PackageExtension>zip</PackageExtension>  
