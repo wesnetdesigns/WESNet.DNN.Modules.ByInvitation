@@ -277,6 +277,7 @@ namespace WESNet.DNN.Modules.ByInvitation
                     Response.Redirect(Globals.AccessDeniedURL(), true);
                     break;
             }
+            cmdCancel.NavigateUrl = ReturnUrl;
         }
 
         protected void InitializeEditControls()

@@ -17,7 +17,7 @@
     <ReferencePath>$(ReferencesRootDirectory)\$(ReferencesVersion)</ReferencePath>
     <DNNManifestFilePath>$(MSBuildProjectDirectory)\$(AssemblyName).dnn</DNNManifestFilePath>
     <BaseWebsitePath>D:\DNN Websites</BaseWebsitePath>
-    <WebsitePath>dnn741source\Website</WebsitePath>
+    <WebsitePath>dnn73xsource\Website</WebsitePath>
     <WebSiteRootPath>$(BaseWebsitePath)\$(WebsitePath)</WebSiteRootPath>
     <WebSiteModuleFolder>$(WebsiteRootPath)\DesktopModules\$(DesktopModulesFolderName)</WebSiteModuleFolder>
     <PackageExtension>zip</PackageExtension>  

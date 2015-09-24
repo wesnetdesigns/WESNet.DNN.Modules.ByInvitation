@@ -378,8 +378,8 @@ namespace WESNet.DNN.Modules.ByInvitation
         {
             var grid = (DnnGrid)sender;
             var gridName = Regex.Replace(grid.ID, @"dg(\w+)Invitations","$1");
-            var invitationID = (int)grid.MasterTableView.DataKeyValues[0]["InvitationID"];
-            var invitedByUserID = (int)grid.MasterTableView.DataKeyValues[0]["InvitedByUserID"];
+            var invitationID = (int)grid.MasterTableView.DataKeyValues[e.Item.ItemIndex]["InvitationID"];
+            var invitedByUserID = (int)grid.MasterTableView.DataKeyValues[e.Item.ItemIndex]["InvitedByUserID"];
             InvitationInfo currentInvitation = null;
 
             switch (e.CommandName.ToLowerInvariant())

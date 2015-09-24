@@ -27,6 +27,7 @@
     <IISExpressUseClassicPipelineMode />
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">.\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -83,6 +84,7 @@
     <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\_references\07.03.03\System.Net.Http.Formatting.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.DynamicData" />
@@ -95,6 +97,7 @@
     <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\_references\07.03.03\System.Web.Http.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
@@ -197,7 +200,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="01.00.02.txt" />
+    <Content Include="01.00.03.txt" />
     <Content Include="App_LocalResources\ProcessInvitation.ascx.resx" />
   </ItemGroup>
   <ItemGroup>
@@ -205,6 +208,7 @@
     <Content Include="Controls\DataFieldMappingGrid.ascx" />
     <Content Include="Documentation\WESNet.DNN.Modules.ByInvitation_01.00.01_ReleaseNotes.htm" />
     <Content Include="Documentation\WESNet.DNN.Modules.ByInvitation_01.00.02_ReleaseNotes.htm" />
+    <Content Include="Documentation\WESNet.DNN.Modules.ByInvitation_01.00.03_ReleaseNotes.htm" />
     <Content Include="images\bulkimportprogressbar.gif" />
     <Content Include="Providers\DataProviders\SqlDataProvider\Uninstall.SqlDataProvider" />
     <Content Include="scripts\DataFieldMappingGrid.js" />
