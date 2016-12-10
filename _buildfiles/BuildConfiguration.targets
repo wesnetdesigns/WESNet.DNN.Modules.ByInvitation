@@ -13,11 +13,11 @@
     <BuildFilesDirectory>$(MSBuildProjectDirectory)\_buildfiles</BuildFilesDirectory>
     <BuildLibrariesDirectory>$(DevelopmentRootDirectory)\_buildlibraries</BuildLibrariesDirectory>
     <ReferencesRootDirectory>$(DevelopmentRootDirectory)\_references</ReferencesRootDirectory>
-    <ReferencesVersion>07.03.03</ReferencesVersion>
+    <ReferencesVersion>08.00.03</ReferencesVersion>
     <ReferencePath>$(ReferencesRootDirectory)\$(ReferencesVersion)</ReferencePath>
     <DNNManifestFilePath>$(MSBuildProjectDirectory)\$(AssemblyName).dnn</DNNManifestFilePath>
     <BaseWebsitePath>D:\DNN Websites</BaseWebsitePath>
-    <WebsitePath>dnn73xsource\Website</WebsitePath>
+    <WebsitePath>dnn8xxsource\Website</WebsitePath>
     <WebSiteRootPath>$(BaseWebsitePath)\$(WebsitePath)</WebSiteRootPath>
     <WebSiteModuleFolder>$(WebsiteRootPath)\DesktopModules\$(DesktopModulesFolderName)</WebSiteModuleFolder>
     <PackageExtension>zip</PackageExtension>  

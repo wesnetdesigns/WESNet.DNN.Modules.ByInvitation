@@ -1,6 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SendInvitation.ascx.cs" Inherits="WESNet.DNN.Modules.ByInvitation.SendInvitation" %>
 <%@ Register TagPrefix="dnn" TagName="Label" Src="~/controls/LabelControl.ascx" %>
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web" %>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web.Deprecated" %>
 <div class="WESNet_ByInvitation">
     <ul id="ulActionCommands" runat="server" class="dnnActions dnnClear">
 		<li><asp:HyperLink ID="lnkManageInvitations" runat="server" ResourceKey="lnkManageInvitations" CssClass="dnnSecondaryAction"></asp:HyperLink></li>

@@ -1,6 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="RoleBasedLimitsGrid.ascx.cs" Inherits="WESNet.DNN.Modules.ByInvitation.Controls.RoleBasedLimitsGrid" %>
 <%@ Register TagPrefix="dnn" TagName="Label" Src="~/controls/LabelControl.ascx" %>
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web" %>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web.Deprecated" %>
 <%@ Register TagPrefix="wes" TagName="TimeSpanPicker" Src="~/DesktopModules/WESNet_ByInvitation/Controls/TimeSpanPicker.ascx" %>
 
 <div class="dnnForm RoleBasedLimits dnnClear">

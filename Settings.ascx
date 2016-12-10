@@ -5,6 +5,7 @@
 <%@ Register TagPrefix="wes" TagName="RoleBasedLimitsGrid" Src="~/DesktopModules/WESNet_ByInvitation/Controls/RoleBasedLimitsGrid.ascx" %>
 <%@ Register TagPrefix="wes" TagName="TimeSpanPicker" Src="~/DesktopModules/WESNet_ByInvitation/Controls/TimeSpanPicker.ascx" %>
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web" %>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web.Deprecated" %>
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.UI.WebControls" Assembly="DotNetNuke" %>
 
 <div id="WESNet_ByInvitation_Settings" class="dnnForm WESNet_ByInvitation_Settings dnnClear">

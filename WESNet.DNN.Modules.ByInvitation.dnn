@@ -1,6 +1,6 @@
 ﻿<dotnetnuke type="Package" version="6.0">
     <packages>
-        <package name="WESNet_ByInvitation" type="Module" version="01.00.03.01">
+        <package name="WESNet_ByInvitation" type="Module" version="01.00.04.14">
             <friendlyName>By Invitation</friendlyName>
             <description>Invite your friends, family and co-workers to register as a user on this site via an automatic email which will contain a link with a one-time RSVP code that when clicked will create their account, apply selected security roles, log them in and then redirect the new user to a selected site page.</description>
             <iconFile>DesktopModules/WESNet_ByInvitation/images/ByInvitation.png</iconFile>
@@ -11,10 +11,10 @@
                 <email>bill@wesnetdesigns.com</email>
             </owner>
             <license src="Documentation\License.htm"/>
-            <releaseNotes src="Documentation\WESNet.DNN.Modules.ByInvitation_01.00.03_ReleaseNotes.htm" />
+            <releaseNotes src="Documentation\WESNet.DNN.Modules.ByInvitation_01.00.04_ReleaseNotes.htm" />
             <azureCompatible>true</azureCompatible>
             <dependencies>
-                <dependency type="CoreVersion">07.03.03</dependency>
+                <dependency type="CoreVersion">08.00.03</dependency>
               <dependency type="type">System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry</dependency>
             </dependencies>
             <components>
@@ -110,7 +110,7 @@
                         <attributes>
                             <businessControllerClass>WESNet.DNN.Modules.ByInvitation.InvitationController</businessControllerClass>
                             <desktopModuleID>[DESKTOPMODULEID]</desktopModuleID>
-                            <upgradeVersionsList>01.00.00,01.00.01,01.00.02,01.00.03</upgradeVersionsList>
+                            <upgradeVersionsList>01.00.00,01.00.01,01.00.02,01.00.03,01.00.04</upgradeVersionsList>
                         </attributes>
                     </eventMessage>
                 </component>
@@ -119,7 +119,7 @@
                         <assembly>
                           <path>bin</path>
                           <name>WESNet.DNN.Modules.ByInvitation.dll</name>
-                          <version>1.0.3.1</version>
+                          <version>1.0.4.0</version>
                         </assembly>
                         <assembly>
                           <path>bin</path>
@@ -141,10 +141,10 @@
                         </resourceFile>
                     </resourceFiles>
                 </component>
-                <component type="Cleanup" version="01.00.03" fileName="01.00.03.txt" />
+                <component type="Cleanup" version="01.00.04" fileName="01.00.04.txt" />
             </components>
         </package>
-        <package name="WESNet_ByInvitation_Processor" type="Module" version="01.00.03.01">
+        <package name="WESNet_ByInvitation_Processor" type="Module" version="01.00.04.14">
             <friendlyName>By Invitation Processor</friendlyName>
             <description>Invitation processing module for WESNet_ByInvitation.</description>
             <iconFile>DesktopModules/WESNet_ByInvitation/images/ByInvitation.png</iconFile>
@@ -155,9 +155,9 @@
                 <email>bill@wesnetdesigns.com</email>
             </owner>
             <license src="Documentation\License.htm"/>
-            <releaseNotes src="Documentation\WESNet.DNN.Modules.ByInvitation_01.00.03_ReleaseNotes.htm" />
+            <releaseNotes src="Documentation\WESNet.DNN.Modules.ByInvitation_01.00.04_ReleaseNotes.htm" />
             <dependencies>
-                <dependency type="CoreVersion">07.03.03</dependency>
+                <dependency type="CoreVersion">08.00.03</dependency>
             </dependencies>
             <components>
                 <component type="Module">

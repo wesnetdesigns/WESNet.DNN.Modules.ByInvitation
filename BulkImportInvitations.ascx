@@ -3,7 +3,7 @@
 <%@ Import Namespace="WESNet.DNN.Modules.ByInvitation.Controls" %>
 <%@ Register TagPrefix="dnn" TagName="Label" Src="~/controls/LabelControl.ascx" %>
 <%@ Register TagPrefix="dnn" TagName="FilePickerUploader" Src="~/controls/filepickeruploader.ascx" %>
-<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web" %>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web.Deprecated" %>
 <%@ Register TagPrefix="wes" TagName="DataFieldMappingGrid" Src="~/DesktopModules/WESNet_ByInvitation/Controls/DataFieldMappingGrid.ascx" %>
 
 <div class="dnnForm WESNet_ByInvitation dnnClear" id="WESNet_ByInvitation_BulkImport">

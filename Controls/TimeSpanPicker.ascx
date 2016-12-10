@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="TimeSpanPicker.ascx.cs" Inherits="WESNet.DNN.Modules.ByInvitation.Controls.TimeSpanPicker" %>
-<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web" %>
+<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.UI.WebControls" Assembly="DotNetNuke.Web.Deprecated" %>
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.UI.WebControls" Assembly="DotNetNuke" %>
 <div class="WESNet_TimeSpanPicker">
     <dnn:DnnRadButton ID="btnSign" runat="server" ButtonType="ToggleButton" ToggleType="CustomToggle" CssClass="SignToggle" AutoPostBack="false" EnableViewState="true" ></dnn:DnnRadButton>

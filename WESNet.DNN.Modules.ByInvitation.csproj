@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WESNet.DNN.Modules.ByInvitation</RootNamespace>
     <AssemblyName>WESNet.DNN.Modules.ByInvitation</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
     <TargetFrameworkProfile />
     <FileUpgradeFlags>
@@ -70,6 +70,11 @@
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
+    <Reference Include="DotNetNuke.Web.Deprecated, Version=8.0.3.5, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\_references\08.00.03\DotNetNuke.Web.Deprecated.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Microsoft.ApplicationBlocks.Data, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <Private>False</Private>
     </Reference>
@@ -80,6 +85,7 @@
     <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\_references\07.03.03\System.Net.Http.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -200,7 +206,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="01.00.03.txt" />
+    <Content Include="01.00.04.txt" />
     <Content Include="App_LocalResources\ProcessInvitation.ascx.resx" />
   </ItemGroup>
   <ItemGroup>
@@ -208,6 +214,7 @@
     <Content Include="Controls\DataFieldMappingGrid.ascx" />
     <Content Include="Documentation\WESNet.DNN.Modules.ByInvitation_01.00.01_ReleaseNotes.htm" />
     <Content Include="Documentation\WESNet.DNN.Modules.ByInvitation_01.00.02_ReleaseNotes.htm" />
+    <Content Include="Documentation\WESNet.DNN.Modules.ByInvitation_01.00.04_ReleaseNotes.htm" />
     <Content Include="Documentation\WESNet.DNN.Modules.ByInvitation_01.00.03_ReleaseNotes.htm" />
     <Content Include="images\bulkimportprogressbar.gif" />
     <Content Include="Providers\DataProviders\SqlDataProvider\Uninstall.SqlDataProvider" />

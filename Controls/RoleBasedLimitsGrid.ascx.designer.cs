@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WESNet.DNN.Modules.ByInvitation.Controls {
-    
-    
-    public partial class RoleBasedLimitsGrid {
-        
+namespace WESNet.DNN.Modules.ByInvitation.Controls
+{
+
+
+    public partial class RoleBasedLimitsGrid
+    {
+
         /// <summary>
         /// plInvitingUserRoles control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace WESNet.DNN.Modules.ByInvitation.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl plInvitingUserRoles;
-        
+
         /// <summary>
         /// dgInvitingUserRoles control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace WESNet.DNN.Modules.ByInvitation.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.Web.UI.WebControls.DnnGrid dgInvitingUserRoles;
-        
+
         /// <summary>
         /// divAddInvitingUserRole control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace WESNet.DNN.Modules.ByInvitation.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divAddInvitingUserRole;
-        
+
         /// <summary>
         /// plAddInvitingUserRole control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace WESNet.DNN.Modules.ByInvitation.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl plAddInvitingUserRole;
-        
+
         /// <summary>
         /// ddlInvitingUserRoles control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace WESNet.DNN.Modules.ByInvitation.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlInvitingUserRoles;
-        
+
         /// <summary>
         /// btnAddInvitingUserRole control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace WESNet.DNN.Modules.ByInvitation.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.Web.UI.WebControls.DnnImageButton btnAddInvitingUserRole;
-        
+
         /// <summary>
         /// divEditRoleBasedLimits control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace WESNet.DNN.Modules.ByInvitation.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divEditRoleBasedLimits;
-        
+
         /// <summary>
         /// plSelectedRoleName control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace WESNet.DNN.Modules.ByInvitation.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl plSelectedRoleName;
-        
+
         /// <summary>
         /// lblSelectedRoleName control.
         /// </summary>
@@ -92,7 +94,7 @@ namespace WESNet.DNN.Modules.ByInvitation.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSelectedRoleName;
-        
+
         /// <summary>
         /// plAllocatedInvitations control.
         /// </summary>
@@ -101,7 +103,7 @@ namespace WESNet.DNN.Modules.ByInvitation.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl plAllocatedInvitations;
-        
+
         /// <summary>
         /// tbAllocatedInvitations control.
         /// </summary>
@@ -110,7 +112,7 @@ namespace WESNet.DNN.Modules.ByInvitation.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.Web.UI.WebControls.DnnNumericTextBox tbAllocatedInvitations;
-        
+
         /// <summary>
         /// plAllocationPeriod control.
         /// </summary>
@@ -119,7 +121,7 @@ namespace WESNet.DNN.Modules.ByInvitation.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl plAllocationPeriod;
-        
+
         /// <summary>
         /// tpAllocationPeriod control.
         /// </summary>
@@ -128,7 +130,7 @@ namespace WESNet.DNN.Modules.ByInvitation.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::WESNet.DNN.Modules.ByInvitation.Controls.TimeSpanPicker tpAllocationPeriod;
-        
+
         /// <summary>
         /// plAssignableRoles control.
         /// </summary>
@@ -137,7 +139,7 @@ namespace WESNet.DNN.Modules.ByInvitation.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl plAssignableRoles;
-        
+
         /// <summary>
         /// cblAssignableRoles control.
         /// </summary>
@@ -146,7 +148,7 @@ namespace WESNet.DNN.Modules.ByInvitation.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBoxList cblAssignableRoles;
-        
+
         /// <summary>
         /// cmdUpdate control.
         /// </summary>
@@ -155,7 +157,7 @@ namespace WESNet.DNN.Modules.ByInvitation.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton cmdUpdate;
-        
+
         /// <summary>
         /// cmdCancel control.
         /// </summary>

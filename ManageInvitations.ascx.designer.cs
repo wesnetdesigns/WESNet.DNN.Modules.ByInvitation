@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WESNet.DNN.Modules.ByInvitation {
-    
-    
-    public partial class ManageInvitations {
-        
+namespace WESNet.DNN.Modules.ByInvitation
+{
+
+
+    public partial class ManageInvitations
+    {
+
         /// <summary>
         /// divInvitingUserSelector control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divInvitingUserSelector;
-        
+
         /// <summary>
         /// plInvitingUser control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl plInvitingUser;
-        
+
         /// <summary>
         /// ddlInvitingUser control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlInvitingUser;
-        
+
         /// <summary>
         /// plDateRange control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl plDateRange;
-        
+
         /// <summary>
         /// plFromDate control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label plFromDate;
-        
+
         /// <summary>
         /// tbFromDate control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.Web.UI.WebControls.DnnDatePicker tbFromDate;
-        
+
         /// <summary>
         /// plThroughDate control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label plThroughDate;
-        
+
         /// <summary>
         /// tbThroughDate control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.Web.UI.WebControls.DnnDatePicker tbThroughDate;
-        
+
         /// <summary>
         /// plShowArchived control.
         /// </summary>
@@ -92,7 +94,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl plShowArchived;
-        
+
         /// <summary>
         /// cbShowArchived control.
         /// </summary>
@@ -101,7 +103,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox cbShowArchived;
-        
+
         /// <summary>
         /// lnkSearchAgain control.
         /// </summary>
@@ -110,7 +112,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lnkSearchAgain;
-        
+
         /// <summary>
         /// divInvitingUserStats control.
         /// </summary>
@@ -119,7 +121,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divInvitingUserStats;
-        
+
         /// <summary>
         /// plUserDisplayName control.
         /// </summary>
@@ -128,7 +130,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl plUserDisplayName;
-        
+
         /// <summary>
         /// lblUserDisplayName control.
         /// </summary>
@@ -137,7 +139,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblUserDisplayName;
-        
+
         /// <summary>
         /// plTotalInvitationCount control.
         /// </summary>
@@ -146,7 +148,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl plTotalInvitationCount;
-        
+
         /// <summary>
         /// lblTotalInvitationCount control.
         /// </summary>
@@ -155,7 +157,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblTotalInvitationCount;
-        
+
         /// <summary>
         /// divModeratedStats control.
         /// </summary>
@@ -164,7 +166,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divModeratedStats;
-        
+
         /// <summary>
         /// plApprovedInvitationCount control.
         /// </summary>
@@ -173,7 +175,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl plApprovedInvitationCount;
-        
+
         /// <summary>
         /// lblApprovedInvitationCount control.
         /// </summary>
@@ -182,7 +184,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblApprovedInvitationCount;
-        
+
         /// <summary>
         /// plDisapprovedInvitationCount control.
         /// </summary>
@@ -191,7 +193,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl plDisapprovedInvitationCount;
-        
+
         /// <summary>
         /// lblDisapprovedInvitationCount control.
         /// </summary>
@@ -200,7 +202,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDisapprovedInvitationCount;
-        
+
         /// <summary>
         /// plSentInvitationCount control.
         /// </summary>
@@ -209,7 +211,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl plSentInvitationCount;
-        
+
         /// <summary>
         /// lblSentInvitationCount control.
         /// </summary>
@@ -218,7 +220,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSentInvitationCount;
-        
+
         /// <summary>
         /// plRetractedInvitationCount control.
         /// </summary>
@@ -227,7 +229,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl plRetractedInvitationCount;
-        
+
         /// <summary>
         /// lblRetractedInvitationCount control.
         /// </summary>
@@ -236,7 +238,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblRetractedInvitationCount;
-        
+
         /// <summary>
         /// plDeclinedInvitationCount control.
         /// </summary>
@@ -245,7 +247,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl plDeclinedInvitationCount;
-        
+
         /// <summary>
         /// lblDeclinedInvitationCount control.
         /// </summary>
@@ -254,7 +256,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDeclinedInvitationCount;
-        
+
         /// <summary>
         /// plAcceptedInvitationCount control.
         /// </summary>
@@ -263,7 +265,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl plAcceptedInvitationCount;
-        
+
         /// <summary>
         /// lblAcceptedInvitationCount control.
         /// </summary>
@@ -272,7 +274,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblAcceptedInvitationCount;
-        
+
         /// <summary>
         /// plExpiredInvitationCount control.
         /// </summary>
@@ -281,7 +283,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl plExpiredInvitationCount;
-        
+
         /// <summary>
         /// lblExpiredInvitationCount control.
         /// </summary>
@@ -290,7 +292,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblExpiredInvitationCount;
-        
+
         /// <summary>
         /// plPendingInvitationCount control.
         /// </summary>
@@ -299,7 +301,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl plPendingInvitationCount;
-        
+
         /// <summary>
         /// lblPendingInvitationCount control.
         /// </summary>
@@ -308,7 +310,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblPendingInvitationCount;
-        
+
         /// <summary>
         /// plLastInvitedOnDate control.
         /// </summary>
@@ -317,7 +319,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.UI.UserControls.LabelControl plLastInvitedOnDate;
-        
+
         /// <summary>
         /// lblLastInvitedOnDate control.
         /// </summary>
@@ -326,7 +328,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblLastInvitedOnDate;
-        
+
         /// <summary>
         /// dgUnmoderatedInvitations control.
         /// </summary>
@@ -335,7 +337,52 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.Web.UI.WebControls.DnnGrid dgUnmoderatedInvitations;
-        
+
+        /// <summary>
+        /// btnApprove control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DotNetNuke.Web.UI.WebControls.DnnImageButton btnApprove;
+
+        /// <summary>
+        /// btnDisapprove control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DotNetNuke.Web.UI.WebControls.DnnImageButton btnDisapprove;
+
+        /// <summary>
+        /// btnEditApprove control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DotNetNuke.Web.UI.WebControls.DnnImageButton btnEditApprove;
+
+        /// <summary>
+        /// btnDeleteUnmoderated control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DotNetNuke.Web.UI.WebControls.DnnImageButton btnDeleteUnmoderated;
+
+        /// <summary>
+        /// lblInvitedOnDateUnmoderated control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblInvitedOnDateUnmoderated;
+
         /// <summary>
         /// dgPendingInvitations control.
         /// </summary>
@@ -344,7 +391,61 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.Web.UI.WebControls.DnnGrid dgPendingInvitations;
-        
+
+        /// <summary>
+        /// btnResendPending control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DotNetNuke.Web.UI.WebControls.DnnImageButton btnResendPending;
+
+        /// <summary>
+        /// btnRetractPending control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DotNetNuke.Web.UI.WebControls.DnnImageButton btnRetractPending;
+
+        /// <summary>
+        /// btnEditPending control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DotNetNuke.Web.UI.WebControls.DnnImageButton btnEditPending;
+
+        /// <summary>
+        /// lblInvitedOnDatePending control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblInvitedOnDatePending;
+
+        /// <summary>
+        /// lblLastResentOnDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblLastResentOnDate;
+
+        /// <summary>
+        /// lblExpiresOnDatePending control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblExpiresOnDatePending;
+
         /// <summary>
         /// dgRetractedInvitations control.
         /// </summary>
@@ -353,7 +454,52 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.Web.UI.WebControls.DnnGrid dgRetractedInvitations;
-        
+
+        /// <summary>
+        /// btnUnRetractRetracted control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DotNetNuke.Web.UI.WebControls.DnnImageButton btnUnRetractRetracted;
+
+        /// <summary>
+        /// btnEdit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DotNetNuke.Web.UI.WebControls.DnnImageButton btnEdit;
+
+        /// <summary>
+        /// lblInvitedOnDateRetracted control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblInvitedOnDateRetracted;
+
+        /// <summary>
+        /// lblRetractedOnDateRetracted control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblRetractedOnDateRetracted;
+
+        /// <summary>
+        /// lblExpiresOnDateRetracted control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblExpiresOnDateRetracted;
+
         /// <summary>
         /// dgDeclinedInvitations control.
         /// </summary>
@@ -362,7 +508,34 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.Web.UI.WebControls.DnnGrid dgDeclinedInvitations;
-        
+
+        /// <summary>
+        /// btnArchiveDeclined control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DotNetNuke.Web.UI.WebControls.DnnImageButton btnArchiveDeclined;
+
+        /// <summary>
+        /// lblInvitedOnDateDeclined control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblInvitedOnDateDeclined;
+
+        /// <summary>
+        /// lblDeclinedOnDateDeclined control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDeclinedOnDateDeclined;
+
         /// <summary>
         /// dgExpiredInvitations control.
         /// </summary>
@@ -371,7 +544,61 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.Web.UI.WebControls.DnnGrid dgExpiredInvitations;
-        
+
+        /// <summary>
+        /// btnExtendExpired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DotNetNuke.Web.UI.WebControls.DnnImageButton btnExtendExpired;
+
+        /// <summary>
+        /// btnArchiveExpired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DotNetNuke.Web.UI.WebControls.DnnImageButton btnArchiveExpired;
+
+        /// <summary>
+        /// btnDeleteExpired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DotNetNuke.Web.UI.WebControls.DnnImageButton btnDeleteExpired;
+
+        /// <summary>
+        /// lblInvitedOnDateExpired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblInvitedOnDateExpired;
+
+        /// <summary>
+        /// lblLastResentOnDateExpired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblLastResentOnDateExpired;
+
+        /// <summary>
+        /// lblExpiresOnDateExpired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblExpiresOnDateExpired;
+
         /// <summary>
         /// dgAcceptedInvitations control.
         /// </summary>
@@ -380,7 +607,34 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DotNetNuke.Web.UI.WebControls.DnnGrid dgAcceptedInvitations;
-        
+
+        /// <summary>
+        /// btnArchiveAccepted control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DotNetNuke.Web.UI.WebControls.DnnImageButton btnArchiveAccepted;
+
+        /// <summary>
+        /// lblInvitedOnDateAccepted control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblInvitedOnDateAccepted;
+
+        /// <summary>
+        /// lblAcceptedOnDateAccepted control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblAcceptedOnDateAccepted;
+
         /// <summary>
         /// divActions control.
         /// </summary>
@@ -389,7 +643,7 @@ namespace WESNet.DNN.Modules.ByInvitation {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divActions;
-        
+
         /// <summary>
         /// cmdReturn control.
         /// </summary>

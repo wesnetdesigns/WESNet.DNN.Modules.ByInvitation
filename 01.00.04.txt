@@ -1,3 +1,4 @@
 ﻿DesktopModules\WESNet_ByInvitation\01.00.00.txt
 DesktopModules\WESNet_ByInvitation\01.00.01.txt
 DesktopModules\WESNet_ByInvitation\01.00.02.txt
+DesktopModules\WESNet_ByInvitation\01.00.03.txt
